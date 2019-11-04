@@ -78,7 +78,7 @@ def create_transition_graph_from_dict(pattern_dict):
 
 def create_recurrence_plot_from_intervaltier(interval_tier):
     data_points = [interval.mark() for interval in interval_tier]
-    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=0)
+    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=2)
     settings = Settings(time_series,
                         computing_type=ComputingType.Classic,
                         neighbourhood=FixedRadius(0.65),
@@ -96,7 +96,7 @@ def create_recurrence_plot_from_intervaltier(interval_tier):
     computation = RPComputation.create(settings)
     result = computation.run()
     ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
-                                        'recurrence_plot.png')
+                                        'recurrence_plot2.png')
 
 if __name__ == '__main__':
     # textgrid = TextGrid()
