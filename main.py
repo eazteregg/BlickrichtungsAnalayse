@@ -1,6 +1,5 @@
 import csv
 import os
-import pyrqa as rqa
 from pyrqa.time_series import TimeSeries
 from pyrqa.settings import Settings
 from pyrqa.computing_type import ComputingType
@@ -10,16 +9,20 @@ from pyrqa.computation import RQAComputation
 from pyrqa.computation import RPComputation
 from pyrqa.image_generator import ImageGenerator
 from collections import defaultdict
-
+import re
 from praatclasses import TextGrid
 from transitions.extensions import GraphMachine as Machine
 
 VP_WORDS_PATH = os.path.join('VPs', 'Words')
 VP_BLICKRICHTUNGEN_PATH = os.path.join('VPs', 'Blickrichtungen')
 ANALYSEN_PATH = 'Analysen'
+CSV_PATH = 'csv'
+GRAPH_PATH = 'graphs'
+RECURRENCE_PATH = 'recPlots'
 
 
 def analyze_eye_movement_patterns(interval_tier):
+
     pattern_dict = {}
     for n in range(0, 10):
         pattern_dict[n] = defaultdict((int))
@@ -27,48 +30,73 @@ def analyze_eye_movement_patterns(interval_tier):
     current_direction = None
 
     for interval in interval_tier:
+
         if current_direction is None:
-            current_direction = int(interval.mark())
+            try:
+                current_direction = int(interval.mark())
+            except ValueError:
+                del interval
+                continue
         else:
-            next_direction = int(interval.mark())
+            try:
+                next_direction = int(interval.mark())
+                pattern_dict[current_direction][next_direction] += 1
 
-            pattern_dict[current_direction][next_direction] += 1
+                current_direction = next_direction
 
-            current_direction = next_direction
+            except ValueError:
+                del interval
+                continue
+
+
 
     return pattern_dict
 
 
-def compute_relative_frequencies(pattern_dict):
+def compute_relative_frequencies(pattern_dict, withFive = True):
     for blickrichtung in pattern_dict:
         sum = 0
-        for k, v in pattern_dict[blickrichtung].items():
+        for key, v in pattern_dict[blickrichtung].items():
+            if not withFive and key == 5:
+                continue
             sum += v
 
         for key in pattern_dict[blickrichtung]:
+            if not withFive and key == 5:
+                continue
             value = pattern_dict[blickrichtung][key]
             pattern_dict[blickrichtung][key] = round(value / sum, 2)
 
     return pattern_dict
 
 
-def write_movementpattern_to_csv(filename, pattern_dict):
+def write_movementpattern_to_csv(filename, pattern_dict, withFive=True):
     with open(filename, mode='w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([None] + [str(x) for x in range(0, 10)])
         for blickrichtung in pattern_dict:
+
+            if not withFive and blickrichtung == 5:
+                continue
             row = [str(pattern_dict[blickrichtung][x]) for x in range(0, 10)]
             writer.writerow([str(blickrichtung)] + row)
 
 
-def create_transition_graph_from_dict(pattern_dict):
-    machine = Machine(states=[str(x) for x in pattern_dict.keys()], use_pygraphviz=False)
+def create_transition_graph_from_dict(pattern_dict, withFive = True):
+    if withFive:
+        machine = Machine(states=[str(x) for x in pattern_dict.keys()], use_pygraphviz=False)
+
+    else:
+        machine = Machine(states=[str(x) for x in pattern_dict.keys() if x != 5], use_pygraphviz=False)
 
     for blickrichtung in pattern_dict:
         for next_blckrchtng in pattern_dict[blickrichtung]:
 
+            if not withFive and (blickrichtung == 5 or next_blckrchtng == 5):
+                continue
             if pattern_dict[blickrichtung][next_blckrchtng] == 0:
                 continue
+
 
             machine.add_transition(str(pattern_dict[blickrichtung][next_blckrchtng]), str(blickrichtung),
                                    str(next_blckrchtng))
@@ -76,9 +104,9 @@ def create_transition_graph_from_dict(pattern_dict):
     return machine
 
 
-def create_recurrence_plot_from_intervaltier(interval_tier):
+def create_recurrence_plot_from_intervaltier(interval_tier, destination):
     data_points = [interval.mark() for interval in interval_tier]
-    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=2)
+    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=0)
     settings = Settings(time_series,
                         computing_type=ComputingType.Classic,
                         neighbourhood=FixedRadius(0.65),
@@ -96,22 +124,47 @@ def create_recurrence_plot_from_intervaltier(interval_tier):
     computation = RPComputation.create(settings)
     result = computation.run()
     ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
-                                        'recurrence_plot2.png')
+                                        destination)
+
+def cleanup_IntervalTier(intervals):
+
+    for interval in intervals:
+        if len(interval.mark()) > 1:
+            interval.change_text(interval.mark()[0])
+
+def do_Analysis(withFive = True):
+    regex = r'(\d*_*vp\d*)_.*\.TextGrid'
+
+    VP_TextGrids = dict()
+
+    for filename in os.listdir(VP_BLICKRICHTUNGEN_PATH):
+        mo = re.search(regex, filename)
+        if mo:
+            vp_nr = mo.group(1)
+            VP_TextGrids[vp_nr] = TextGrid()
+            VP_TextGrids[vp_nr].read(os.path.join(VP_BLICKRICHTUNGEN_PATH, filename))
+            VP_TextGrids[vp_nr][0].delete_empty()
+            cleanup_IntervalTier(VP_TextGrids[vp_nr][0])
+
+    VP_PatternDicts = dict()
+
+    for vp_nr in VP_TextGrids:
+        VP_PatternDicts[vp_nr] = analyze_eye_movement_patterns(VP_TextGrids[vp_nr][0])
+
+        compute_relative_frequencies(VP_PatternDicts[vp_nr], withFive)
+
+    for vp_nr in VP_PatternDicts:
+        write_movementpattern_to_csv(os.path.join(ANALYSEN_PATH, CSV_PATH, vp_nr + "_tabelle.csv"),
+                                     VP_PatternDicts[vp_nr])
+
+        machine = create_transition_graph_from_dict(VP_PatternDicts[vp_nr], withFive)
+        machine.get_combined_graph().draw(os.path.join(ANALYSEN_PATH, GRAPH_PATH, vp_nr + "_graph.png"))
+
+    for vp_nr in VP_TextGrids:
+        create_recurrence_plot_from_intervaltier(VP_TextGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
+                                                                                         vp_nr + "_recPlot.png"))
+
 
 if __name__ == '__main__':
-    # textgrid = TextGrid()
-    # textgrid.read("2_vp21_words.TextGrid")
-    # print(textgrid)
 
-    textgrid2 = TextGrid()
-    textgrid2.read(os.path.join(VP_BLICKRICHTUNGEN_PATH, '2_vp21_Blickrichtung.TextGrid'))
-    print(textgrid2[0])
-    textgrid2[0].delete_empty()
-    print(textgrid2[0])
-    pattern_dict = analyze_eye_movement_patterns(textgrid2[0])
-    print(pattern_dict)
-    print(compute_relative_frequencies(pattern_dict))
-    write_movementpattern_to_csv(os.path.join(ANALYSEN_PATH, 'Blickrichtungsanalyse'), pattern_dict)
-    machine = create_transition_graph_from_dict(pattern_dict)
-    machine.get_combined_graph().draw("Blickrichtungsgraph.png")
-    create_recurrence_plot_from_intervaltier(textgrid2[0])
+    do_Analysis(withFive=False)
