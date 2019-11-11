@@ -1,0 +1,1502 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 625.44
+tiers? <exists>
+size = 1
+item []:
+    item[1]:
+        class = "IntervalTier"
+        name = "Blickrichtung"
+        xmin = 0.0
+        xmax = 625.44
+        intervals: size = 372
+        intervals [1]
+            xmin = 0.0
+            xmax = 7.833
+            text = ""
+        intervals [2]
+            xmin = 7.833
+            xmax = 10.221
+            text = "5"
+        intervals [3]
+            xmin = 10.221
+            xmax = 10.541
+            text = "9"
+        intervals [4]
+            xmin = 10.541
+            xmax = 10.728
+            text = "8"
+        intervals [5]
+            xmin = 10.728
+            xmax = 11.252
+            text = "9"
+        intervals [6]
+            xmin = 11.252
+            xmax = 11.482
+            text = "6"
+        intervals [7]
+            xmin = 11.482
+            xmax = 12.939
+            text = "5"
+        intervals [8]
+            xmin = 12.939
+            xmax = 12.941
+            text = ""
+        intervals [9]
+            xmin = 12.941
+            xmax = 17.489
+            text = "4 "
+        intervals [10]
+            xmin = 17.489
+            xmax = 17.85
+            text = "0"
+        intervals [11]
+            xmin = 17.85
+            xmax = 18.333
+            text = "5"
+        intervals [12]
+            xmin = 18.333
+            xmax = 36.414
+            text = ""
+        intervals [13]
+            xmin = 36.414
+            xmax = 39.309
+            text = "5"
+        intervals [14]
+            xmin = 39.309
+            xmax = 39.311
+            text = ""
+        intervals [15]
+            xmin = 39.311
+            xmax = 39.859
+            text = "6"
+        intervals [16]
+            xmin = 39.859
+            xmax = 45.513
+            text = "9"
+        intervals [17]
+            xmin = 45.513
+            xmax = 47.804
+            text = "5"
+        intervals [18]
+            xmin = 47.804
+            xmax = 49.76
+            text = "4"
+        intervals [19]
+            xmin = 49.76
+            xmax = 52.952
+            text = "5"
+        intervals [20]
+            xmin = 52.952
+            xmax = 53.189
+            text = "2"
+        intervals [21]
+            xmin = 53.189
+            xmax = 53.506
+            text = "1"
+        intervals [22]
+            xmin = 53.506
+            xmax = 53.886
+            text = "4"
+        intervals [23]
+            xmin = 53.886
+            xmax = 54.243
+            text = "2"
+        intervals [24]
+            xmin = 54.243
+            xmax = 54.526
+            text = "1"
+        intervals [25]
+            xmin = 54.526
+            xmax = 55.213
+            text = "2"
+        intervals [26]
+            xmin = 55.213
+            xmax = 59.261
+            text = "5"
+        intervals [27]
+            xmin = 59.261
+            xmax = 73.554
+            text = ""
+        intervals [28]
+            xmin = 73.554
+            xmax = 81.765
+            text = "5"
+        intervals [29]
+            xmin = 81.765
+            xmax = 82.23
+            text = "4"
+        intervals [30]
+            xmin = 82.23
+            xmax = 84.712
+            text = "7"
+        intervals [31]
+            xmin = 84.712
+            xmax = 84.713
+            text = ""
+        intervals [32]
+            xmin = 84.713
+            xmax = 84.983
+            text = "4"
+        intervals [33]
+            xmin = 84.983
+            xmax = 85.255
+            text = "1"
+        intervals [34]
+            xmin = 85.255
+            xmax = 85.539
+            text = "3"
+        intervals [35]
+            xmin = 85.539
+            xmax = 85.961
+            text = "6"
+        intervals [36]
+            xmin = 85.961
+            xmax = 86.202
+            text = "9"
+        intervals [37]
+            xmin = 86.202
+            xmax = 88.676
+            text = "5"
+        intervals [38]
+            xmin = 88.676
+            xmax = 88.941
+            text = "2"
+        intervals [39]
+            xmin = 88.941
+            xmax = 88.942
+            text = ""
+        intervals [40]
+            xmin = 88.942
+            xmax = 89.146
+            text = "6"
+        intervals [41]
+            xmin = 89.146
+            xmax = 90.4
+            text = "9"
+        intervals [42]
+            xmin = 90.4
+            xmax = 91.685
+            text = "5"
+        intervals [43]
+            xmin = 91.685
+            xmax = 92.087
+            text = "4"
+        intervals [44]
+            xmin = 92.087
+            xmax = 93.255
+            text = "7"
+        intervals [45]
+            xmin = 93.255
+            xmax = 94.101
+            text = "4"
+        intervals [46]
+            xmin = 94.101
+            xmax = 96.593
+            text = "5"
+        intervals [47]
+            xmin = 96.593
+            xmax = 114.107
+            text = ""
+        intervals [48]
+            xmin = 114.107
+            xmax = 121.935
+            text = "5"
+        intervals [49]
+            xmin = 121.935
+            xmax = 123.912
+            text = "7"
+        intervals [50]
+            xmin = 123.912
+            xmax = 125.982
+            text = "5"
+        intervals [51]
+            xmin = 125.982
+            xmax = 126.966
+            text = "6"
+        intervals [52]
+            xmin = 126.966
+            xmax = 127.499
+            text = "5"
+        intervals [53]
+            xmin = 127.499
+            xmax = 129.061
+            text = "4"
+        intervals [54]
+            xmin = 129.061
+            xmax = 129.934
+            text = "1"
+        intervals [55]
+            xmin = 129.934
+            xmax = 130.385
+            text = "4"
+        intervals [56]
+            xmin = 130.385
+            xmax = 131.127
+            text = "1"
+        intervals [57]
+            xmin = 131.127
+            xmax = 131.423
+            text = "2"
+        intervals [58]
+            xmin = 131.423
+            xmax = 131.424
+            text = ""
+        intervals [59]
+            xmin = 131.424
+            xmax = 131.551
+            text = "3"
+        intervals [60]
+            xmin = 131.551
+            xmax = 132.103
+            text = "6"
+        intervals [61]
+            xmin = 132.103
+            xmax = 132.697
+            text = "5"
+        intervals [62]
+            xmin = 132.697
+            xmax = 133.333
+            text = "0"
+        intervals [63]
+            xmin = 133.333
+            xmax = 136.594
+            text = "5"
+        intervals [64]
+            xmin = 136.594
+            xmax = 151.964
+            text = ""
+        intervals [65]
+            xmin = 151.964
+            xmax = 152.314
+            text = "5"
+        intervals [66]
+            xmin = 152.314
+            xmax = 152.569
+            text = "9"
+        intervals [67]
+            xmin = 152.569
+            xmax = 153.3
+            text = "6"
+        intervals [68]
+            xmin = 153.3
+            xmax = 154.55
+            text = "9"
+        intervals [69]
+            xmin = 154.55
+            xmax = 155.889
+            text = "5"
+        intervals [70]
+            xmin = 155.889
+            xmax = 156.332
+            text = "7"
+        intervals [71]
+            xmin = 156.332
+            xmax = 157.543
+            text = "5"
+        intervals [72]
+            xmin = 157.543
+            xmax = 158.856
+            text = "4"
+        intervals [73]
+            xmin = 158.856
+            xmax = 161.808
+            text = "7"
+        intervals [74]
+            xmin = 161.808
+            xmax = 162.1
+            text = "2"
+        intervals [75]
+            xmin = 162.1
+            xmax = 162.487
+            text = "3"
+        intervals [76]
+            xmin = 162.487
+            xmax = 162.753
+            text = "6"
+        intervals [77]
+            xmin = 162.753
+            xmax = 163.662
+            text = "0"
+        intervals [78]
+            xmin = 163.662
+            xmax = 163.664
+            text = ""
+        intervals [79]
+            xmin = 163.664
+            xmax = 165.997
+            text = "6"
+        intervals [80]
+            xmin = 165.997
+            xmax = 168.712
+            text = "9"
+        intervals [81]
+            xmin = 168.712
+            xmax = 168.945
+            text = "1"
+        intervals [82]
+            xmin = 168.945
+            xmax = 169.245
+            text = "4"
+        intervals [83]
+            xmin = 169.245
+            xmax = 169.25
+            text = ""
+        intervals [84]
+            xmin = 169.25
+            xmax = 169.557
+            text = "7"
+        intervals [85]
+            xmin = 169.557
+            xmax = 171.038
+            text = "4"
+        intervals [86]
+            xmin = 171.038
+            xmax = 171.366
+            text = "2"
+        intervals [87]
+            xmin = 171.366
+            xmax = 171.772
+            text = "6"
+        intervals [88]
+            xmin = 171.772
+            xmax = 172.65
+            text = "5"
+        intervals [89]
+            xmin = 172.65
+            xmax = 173.253
+            text = "4"
+        intervals [90]
+            xmin = 173.253
+            xmax = 173.514
+            text = "7"
+        intervals [91]
+            xmin = 173.514
+            xmax = 174.348
+            text = "4"
+        intervals [92]
+            xmin = 174.348
+            xmax = 174.351
+            text = ""
+        intervals [93]
+            xmin = 174.351
+            xmax = 174.477
+            text = "2"
+        intervals [94]
+            xmin = 174.477
+            xmax = 175.711
+            text = "6"
+        intervals [95]
+            xmin = 175.711
+            xmax = 175.712
+            text = ""
+        intervals [96]
+            xmin = 175.712
+            xmax = 175.977
+            text = "5"
+        intervals [97]
+            xmin = 175.977
+            xmax = 176.329
+            text = "1"
+        intervals [98]
+            xmin = 176.329
+            xmax = 176.649
+            text = "4"
+        intervals [99]
+            xmin = 176.649
+            xmax = 178.282
+            text = "7"
+        intervals [100]
+            xmin = 178.282
+            xmax = 178.478
+            text = "5"
+        intervals [101]
+            xmin = 178.478
+            xmax = 180.807
+            text = "6"
+        intervals [102]
+            xmin = 180.807
+            xmax = 182.438
+            text = "5"
+        intervals [103]
+            xmin = 182.438
+            xmax = 201.619
+            text = ""
+        intervals [104]
+            xmin = 201.619
+            xmax = 202.004
+            text = "5"
+        intervals [105]
+            xmin = 202.004
+            xmax = 202.217
+            text = "4"
+        intervals [106]
+            xmin = 202.217
+            xmax = 202.937
+            text = "7"
+        intervals [107]
+            xmin = 202.937
+            xmax = 203.221
+            text = "8"
+        intervals [108]
+            xmin = 203.221
+            xmax = 203.557
+            text = "9"
+        intervals [109]
+            xmin = 203.557
+            xmax = 203.879
+            text = "8"
+        intervals [110]
+            xmin = 203.879
+            xmax = 204.896
+            text = "7"
+        intervals [111]
+            xmin = 204.896
+            xmax = 205.675
+            text = "4"
+        intervals [112]
+            xmin = 205.675
+            xmax = 206.499
+            text = "7"
+        intervals [113]
+            xmin = 206.499
+            xmax = 206.846
+            text = "6"
+        intervals [114]
+            xmin = 206.846
+            xmax = 206.847
+            text = ""
+        intervals [115]
+            xmin = 206.847
+            xmax = 208.295
+            text = "9"
+        intervals [116]
+            xmin = 208.295
+            xmax = 209.204
+            text = "8"
+        intervals [117]
+            xmin = 209.204
+            xmax = 210.312
+            text = "9"
+        intervals [118]
+            xmin = 210.312
+            xmax = 210.74
+            text = "8"
+        intervals [119]
+            xmin = 210.74
+            xmax = 211.275
+            text = "5"
+        intervals [120]
+            xmin = 211.275
+            xmax = 211.277
+            text = ""
+        intervals [121]
+            xmin = 211.277
+            xmax = 211.935
+            text = "6"
+        intervals [122]
+            xmin = 211.935
+            xmax = 212.645
+            text = "3"
+        intervals [123]
+            xmin = 212.645
+            xmax = 213.046
+            text = "6"
+        intervals [124]
+            xmin = 213.046
+            xmax = 214.047
+            text = "9"
+        intervals [125]
+            xmin = 214.047
+            xmax = 214.721
+            text = "6"
+        intervals [126]
+            xmin = 214.721
+            xmax = 216.451
+            text = "4"
+        intervals [127]
+            xmin = 216.451
+            xmax = 216.453
+            text = ""
+        intervals [128]
+            xmin = 216.453
+            xmax = 218.57
+            text = "7"
+        intervals [129]
+            xmin = 218.57
+            xmax = 218.853
+            text = "4"
+        intervals [130]
+            xmin = 218.853
+            xmax = 224.288
+            text = "7"
+        intervals [131]
+            xmin = 224.288
+            xmax = 224.659
+            text = "4"
+        intervals [132]
+            xmin = 224.659
+            xmax = 225.685
+            text = "5"
+        intervals [133]
+            xmin = 225.685
+            xmax = 227.562
+            text = "6"
+        intervals [134]
+            xmin = 227.562
+            xmax = 228.042
+            text = "0"
+        intervals [135]
+            xmin = 228.042
+            xmax = 228.489
+            text = "6"
+        intervals [136]
+            xmin = 228.489
+            xmax = 231.124
+            text = "9"
+        intervals [137]
+            xmin = 231.124
+            xmax = 231.543
+            text = "6"
+        intervals [138]
+            xmin = 231.543
+            xmax = 232.113
+            text = "9"
+        intervals [139]
+            xmin = 232.113
+            xmax = 232.415
+            text = "4"
+        intervals [140]
+            xmin = 232.415
+            xmax = 232.95
+            text = "7"
+        intervals [141]
+            xmin = 232.95
+            xmax = 233.546
+            text = "4"
+        intervals [142]
+            xmin = 233.546
+            xmax = 233.854
+            text = "7"
+        intervals [143]
+            xmin = 233.854
+            xmax = 233.856
+            text = ""
+        intervals [144]
+            xmin = 233.856
+            xmax = 234.845
+            text = "5"
+        intervals [145]
+            xmin = 234.845
+            xmax = 235.669
+            text = "7"
+        intervals [146]
+            xmin = 235.669
+            xmax = 235.945
+            text = "4"
+        intervals [147]
+            xmin = 235.945
+            xmax = 236.305
+            text = "1"
+        intervals [148]
+            xmin = 236.305
+            xmax = 236.961
+            text = "4"
+        intervals [149]
+            xmin = 236.961
+            xmax = 237.328
+            text = "1"
+        intervals [150]
+            xmin = 237.328
+            xmax = 238.084
+            text = "3"
+        intervals [151]
+            xmin = 238.084
+            xmax = 238.747
+            text = "6"
+        intervals [152]
+            xmin = 238.747
+            xmax = 239.449
+            text = "5"
+        intervals [153]
+            xmin = 239.449
+            xmax = 239.968
+            text = "2"
+        intervals [154]
+            xmin = 239.968
+            xmax = 240.619
+            text = "4"
+        intervals [155]
+            xmin = 240.619
+            xmax = 241.046
+            text = "7"
+        intervals [156]
+            xmin = 241.046
+            xmax = 241.432
+            text = "4"
+        intervals [157]
+            xmin = 241.432
+            xmax = 242.205
+            text = "5"
+        intervals [158]
+            xmin = 242.205
+            xmax = 242.651
+            text = "0"
+        intervals [159]
+            xmin = 242.651
+            xmax = 243.305
+            text = "5"
+        intervals [160]
+            xmin = 243.305
+            xmax = 243.993
+            text = "9"
+        intervals [161]
+            xmin = 243.993
+            xmax = 244.658
+            text = "5"
+        intervals [162]
+            xmin = 244.658
+            xmax = 256.464
+            text = ""
+        intervals [163]
+            xmin = 256.464
+            xmax = 257.316
+            text = "5"
+        intervals [164]
+            xmin = 257.316
+            xmax = 257.321
+            text = ""
+        intervals [165]
+            xmin = 257.321
+            xmax = 258.529
+            text = "7"
+        intervals [166]
+            xmin = 258.529
+            xmax = 261.095
+            text = "5"
+        intervals [167]
+            xmin = 261.095
+            xmax = 261.349
+            text = "8"
+        intervals [168]
+            xmin = 261.349
+            xmax = 263.223
+            text = "7"
+        intervals [169]
+            xmin = 263.223
+            xmax = 263.701
+            text = "4"
+        intervals [170]
+            xmin = 263.701
+            xmax = 264.019
+            text = "1"
+        intervals [171]
+            xmin = 264.019
+            xmax = 264.279
+            text = "4"
+        intervals [172]
+            xmin = 264.279
+            xmax = 266.722
+            text = "7"
+        intervals [173]
+            xmin = 266.722
+            xmax = 267.615
+            text = "6"
+        intervals [174]
+            xmin = 267.615
+            xmax = 268.037
+            text = "9"
+        intervals [175]
+            xmin = 268.037
+            xmax = 268.417
+            text = "5"
+        intervals [176]
+            xmin = 268.417
+            xmax = 269.054
+            text = "2"
+        intervals [177]
+            xmin = 269.054
+            xmax = 271.4
+            text = "5"
+        intervals [178]
+            xmin = 271.4
+            xmax = 271.824
+            text = "8"
+        intervals [179]
+            xmin = 271.824
+            xmax = 272.57
+            text = "5"
+        intervals [180]
+            xmin = 272.57
+            xmax = 272.818
+            text = "6"
+        intervals [181]
+            xmin = 272.818
+            xmax = 273.727
+            text = "9"
+        intervals [182]
+            xmin = 273.727
+            xmax = 273.729
+            text = ""
+        intervals [183]
+            xmin = 273.729
+            xmax = 274.32
+            text = "6"
+        intervals [184]
+            xmin = 274.32
+            xmax = 274.824
+            text = "9"
+        intervals [185]
+            xmin = 274.824
+            xmax = 274.825
+            text = ""
+        intervals [186]
+            xmin = 274.825
+            xmax = 276.235
+            text = "6"
+        intervals [187]
+            xmin = 276.235
+            xmax = 276.854
+            text = "4"
+        intervals [188]
+            xmin = 276.854
+            xmax = 277.524
+            text = "0"
+        intervals [189]
+            xmin = 277.524
+            xmax = 279.092
+            text = "5"
+        intervals [190]
+            xmin = 279.092
+            xmax = 283.257
+            text = "7"
+        intervals [191]
+            xmin = 283.257
+            xmax = 284.729
+            text = "4"
+        intervals [192]
+            xmin = 284.729
+            xmax = 288.068
+            text = "7"
+        intervals [193]
+            xmin = 288.068
+            xmax = 288.072
+            text = ""
+        intervals [194]
+            xmin = 288.072
+            xmax = 288.35
+            text = "2"
+        intervals [195]
+            xmin = 288.35
+            xmax = 288.659
+            text = "3"
+        intervals [196]
+            xmin = 288.659
+            xmax = 289.172
+            text = "0"
+        intervals [197]
+            xmin = 289.172
+            xmax = 289.744
+            text = "5"
+        intervals [198]
+            xmin = 289.744
+            xmax = 290.266
+            text = "0"
+        intervals [199]
+            xmin = 290.266
+            xmax = 290.622
+            text = "9"
+        intervals [200]
+            xmin = 290.622
+            xmax = 292.946
+            text = "6"
+        intervals [201]
+            xmin = 292.946
+            xmax = 294.886
+            text = "9"
+        intervals [202]
+            xmin = 294.886
+            xmax = 295.114
+            text = "6"
+        intervals [203]
+            xmin = 295.114
+            xmax = 295.795
+            text = "5"
+        intervals [204]
+            xmin = 295.795
+            xmax = 296.276
+            text = "4"
+        intervals [205]
+            xmin = 296.276
+            xmax = 297.691
+            text = "7"
+        intervals [206]
+            xmin = 297.691
+            xmax = 298.343
+            text = "3"
+        intervals [207]
+            xmin = 298.343
+            xmax = 299.213
+            text = "5"
+        intervals [208]
+            xmin = 299.213
+            xmax = 326.269
+            text = ""
+        intervals [209]
+            xmin = 326.269
+            xmax = 326.735
+            text = "5"
+        intervals [210]
+            xmin = 326.735
+            xmax = 327.595
+            text = "9"
+        intervals [211]
+            xmin = 327.595
+            xmax = 327.974
+            text = "8"
+        intervals [212]
+            xmin = 327.974
+            xmax = 328.626
+            text = "9"
+        intervals [213]
+            xmin = 328.626
+            xmax = 333.632
+            text = "8"
+        intervals [214]
+            xmin = 333.632
+            xmax = 333.849
+            text = "2"
+        intervals [215]
+            xmin = 333.849
+            xmax = 333.85
+            text = ""
+        intervals [216]
+            xmin = 333.85
+            xmax = 335.519
+            text = "4"
+        intervals [217]
+            xmin = 335.519
+            xmax = 336.107
+            text = "7"
+        intervals [218]
+            xmin = 336.107
+            xmax = 336.721
+            text = "4"
+        intervals [219]
+            xmin = 336.721
+            xmax = 337.546
+            text = "1"
+        intervals [220]
+            xmin = 337.546
+            xmax = 338.316
+            text = "4"
+        intervals [221]
+            xmin = 338.316
+            xmax = 339.349
+            text = "0"
+        intervals [222]
+            xmin = 339.349
+            xmax = 339.743
+            text = "3"
+        intervals [223]
+            xmin = 339.743
+            xmax = 343.606
+            text = "6"
+        intervals [224]
+            xmin = 343.606
+            xmax = 345.634
+            text = "9"
+        intervals [225]
+            xmin = 345.634
+            xmax = 346.158
+            text = "4"
+        intervals [226]
+            xmin = 346.158
+            xmax = 346.541
+            text = "7"
+        intervals [227]
+            xmin = 346.541
+            xmax = 346.547
+            text = ""
+        intervals [228]
+            xmin = 346.547
+            xmax = 346.855
+            text = "4"
+        intervals [229]
+            xmin = 346.855
+            xmax = 348.367
+            text = "1"
+        intervals [230]
+            xmin = 348.367
+            xmax = 348.755
+            text = "4"
+        intervals [231]
+            xmin = 348.755
+            xmax = 351.398
+            text = "7"
+        intervals [232]
+            xmin = 351.398
+            xmax = 353.071
+            text = "5"
+        intervals [233]
+            xmin = 353.071
+            xmax = 353.291
+            text = "6"
+        intervals [234]
+            xmin = 353.291
+            xmax = 355.111
+            text = "9"
+        intervals [235]
+            xmin = 355.111
+            xmax = 355.824
+            text = "5"
+        intervals [236]
+            xmin = 355.824
+            xmax = 377.729
+            text = ""
+        intervals [237]
+            xmin = 377.729
+            xmax = 378.266
+            text = "5"
+        intervals [238]
+            xmin = 378.266
+            xmax = 378.609
+            text = "6"
+        intervals [239]
+            xmin = 378.609
+            xmax = 379.901
+            text = "9"
+        intervals [240]
+            xmin = 379.901
+            xmax = 380.085
+            text = "5"
+        intervals [241]
+            xmin = 380.085
+            xmax = 381.107
+            text = "7"
+        intervals [242]
+            xmin = 381.107
+            xmax = 381.531
+            text = "8"
+        intervals [243]
+            xmin = 381.531
+            xmax = 381.766
+            text = "7"
+        intervals [244]
+            xmin = 381.766
+            xmax = 382.806
+            text = "8"
+        intervals [245]
+            xmin = 382.806
+            xmax = 385.175
+            text = "7"
+        intervals [246]
+            xmin = 385.175
+            xmax = 386.037
+            text = "4"
+        intervals [247]
+            xmin = 386.037
+            xmax = 392.86
+            text = "7"
+        intervals [248]
+            xmin = 392.86
+            xmax = 393.594
+            text = "5"
+        intervals [249]
+            xmin = 393.594
+            xmax = 393.713
+            text = "2"
+        intervals [250]
+            xmin = 393.713
+            xmax = 393.987
+            text = "4"
+        intervals [251]
+            xmin = 393.987
+            xmax = 394.278
+            text = "7"
+        intervals [252]
+            xmin = 394.278
+            xmax = 394.588
+            text = "4"
+        intervals [253]
+            xmin = 394.588
+            xmax = 394.963
+            text = "7"
+        intervals [254]
+            xmin = 394.963
+            xmax = 395.884
+            text = "4"
+        intervals [255]
+            xmin = 395.884
+            xmax = 396.617
+            text = "5"
+        intervals [256]
+            xmin = 396.617
+            xmax = 399.692
+            text = "6"
+        intervals [257]
+            xmin = 399.692
+            xmax = 401.961
+            text = "9"
+        intervals [258]
+            xmin = 401.961
+            xmax = 403.22
+            text = "8"
+        intervals [259]
+            xmin = 403.22
+            xmax = 403.735
+            text = "9"
+        intervals [260]
+            xmin = 403.735
+            xmax = 404.676
+            text = "5"
+        intervals [261]
+            xmin = 404.676
+            xmax = 404.981
+            text = "4"
+        intervals [262]
+            xmin = 404.981
+            xmax = 405.251
+            text = "7"
+        intervals [263]
+            xmin = 405.251
+            xmax = 405.253
+            text = ""
+        intervals [264]
+            xmin = 405.253
+            xmax = 406.409
+            text = "4"
+        intervals [265]
+            xmin = 406.409
+            xmax = 406.41
+            text = ""
+        intervals [266]
+            xmin = 406.41
+            xmax = 407.034
+            text = "7"
+        intervals [267]
+            xmin = 407.034
+            xmax = 408.019
+            text = "4"
+        intervals [268]
+            xmin = 408.019
+            xmax = 408.695
+            text = "7"
+        intervals [269]
+            xmin = 408.695
+            xmax = 409.066
+            text = "4"
+        intervals [270]
+            xmin = 409.066
+            xmax = 411.333
+            text = "7"
+        intervals [271]
+            xmin = 411.333
+            xmax = 414.099
+            text = "5"
+        intervals [272]
+            xmin = 414.099
+            xmax = 432.598
+            text = ""
+        intervals [273]
+            xmin = 432.598
+            xmax = 433.246
+            text = "5"
+        intervals [274]
+            xmin = 433.246
+            xmax = 433.683
+            text = "9"
+        intervals [275]
+            xmin = 433.683
+            xmax = 433.992
+            text = "8"
+        intervals [276]
+            xmin = 433.992
+            xmax = 434.461
+            text = "7"
+        intervals [277]
+            xmin = 434.461
+            xmax = 437.776
+            text = "5"
+        intervals [278]
+            xmin = 437.776
+            xmax = 438.555
+            text = "4"
+        intervals [279]
+            xmin = 438.555
+            xmax = 438.558
+            text = ""
+        intervals [280]
+            xmin = 438.558
+            xmax = 442.998
+            text = "7"
+        intervals [281]
+            xmin = 442.998
+            xmax = 442.999
+            text = ""
+        intervals [282]
+            xmin = 442.999
+            xmax = 443.305
+            text = "6"
+        intervals [283]
+            xmin = 443.305
+            xmax = 444.34
+            text = "5"
+        intervals [284]
+            xmin = 444.34
+            xmax = 445.088
+            text = "6"
+        intervals [285]
+            xmin = 445.088
+            xmax = 445.222
+            text = "3"
+        intervals [286]
+            xmin = 445.222
+            xmax = 445.635
+            text = "1"
+        intervals [287]
+            xmin = 445.635
+            xmax = 445.642
+            text = ""
+        intervals [288]
+            xmin = 445.642
+            xmax = 448.623
+            text = "4"
+        intervals [289]
+            xmin = 448.623
+            xmax = 448.854
+            text = "7"
+        intervals [290]
+            xmin = 448.854
+            xmax = 448.856
+            text = ""
+        intervals [291]
+            xmin = 448.856
+            xmax = 449.771
+            text = "8"
+        intervals [292]
+            xmin = 449.771
+            xmax = 452.689
+            text = "5"
+        intervals [293]
+            xmin = 452.689
+            xmax = 453.521
+            text = "4"
+        intervals [294]
+            xmin = 453.521
+            xmax = 454.625
+            text = "5"
+        intervals [295]
+            xmin = 454.625
+            xmax = 454.992
+            text = "0"
+        intervals [296]
+            xmin = 454.992
+            xmax = 456.24
+            text = "5"
+        intervals [297]
+            xmin = 456.24
+            xmax = 478.369
+            text = ""
+        intervals [298]
+            xmin = 478.369
+            xmax = 478.439
+            text = "5"
+        intervals [299]
+            xmin = 478.439
+            xmax = 478.922
+            text = "6"
+        intervals [300]
+            xmin = 478.922
+            xmax = 479.24
+            text = "8"
+        intervals [301]
+            xmin = 479.24
+            xmax = 479.558
+            text = "7"
+        intervals [302]
+            xmin = 479.558
+            xmax = 480.678
+            text = "5"
+        intervals [303]
+            xmin = 480.678
+            xmax = 483.413
+            text = "7"
+        intervals [304]
+            xmin = 483.413
+            xmax = 484.652
+            text = "4"
+        intervals [305]
+            xmin = 484.652
+            xmax = 485.47
+            text = "7"
+        intervals [306]
+            xmin = 485.47
+            xmax = 485.829
+            text = "8"
+        intervals [307]
+            xmin = 485.829
+            xmax = 487.929
+            text = "9"
+        intervals [308]
+            xmin = 487.929
+            xmax = 488.346
+            text = "4"
+        intervals [309]
+            xmin = 488.346
+            xmax = 489.212
+            text = "0"
+        intervals [310]
+            xmin = 489.212
+            xmax = 489.442
+            text = "6"
+        intervals [311]
+            xmin = 489.442
+            xmax = 496.311
+            text = "9"
+        intervals [312]
+            xmin = 496.311
+            xmax = 496.315
+            text = ""
+        intervals [313]
+            xmin = 496.315
+            xmax = 496.832
+            text = "5"
+        intervals [314]
+            xmin = 496.832
+            xmax = 497.334
+            text = "0"
+        intervals [315]
+            xmin = 497.334
+            xmax = 498.435
+            text = "4"
+        intervals [316]
+            xmin = 498.435
+            xmax = 499.036
+            text = "7"
+        intervals [317]
+            xmin = 499.036
+            xmax = 500.879
+            text = "4"
+        intervals [318]
+            xmin = 500.879
+            xmax = 502.723
+            text = "7"
+        intervals [319]
+            xmin = 502.723
+            xmax = 507.239
+            text = "9"
+        intervals [320]
+            xmin = 507.239
+            xmax = 508.039
+            text = "5"
+        intervals [321]
+            xmin = 508.039
+            xmax = 508.831
+            text = "6"
+        intervals [322]
+            xmin = 508.831
+            xmax = 509.518
+            text = "4"
+        intervals [323]
+            xmin = 509.518
+            xmax = 509.527
+            text = ""
+        intervals [324]
+            xmin = 509.527
+            xmax = 510.518
+            text = "1"
+        intervals [325]
+            xmin = 510.518
+            xmax = 512.331
+            text = "4"
+        intervals [326]
+            xmin = 512.331
+            xmax = 513.501
+            text = "7"
+        intervals [327]
+            xmin = 513.501
+            xmax = 516.527
+            text = "5"
+        intervals [328]
+            xmin = 516.527
+            xmax = 516.536
+            text = ""
+        intervals [329]
+            xmin = 516.536
+            xmax = 517.51
+            text = "4"
+        intervals [330]
+            xmin = 517.51
+            xmax = 518.071
+            text = "5"
+        intervals [331]
+            xmin = 518.071
+            xmax = 540.461
+            text = ""
+        intervals [332]
+            xmin = 540.461
+            xmax = 540.742
+            text = "5"
+        intervals [333]
+            xmin = 540.742
+            xmax = 541.736
+            text = "9"
+        intervals [334]
+            xmin = 541.736
+            xmax = 543.425
+            text = "8"
+        intervals [335]
+            xmin = 543.425
+            xmax = 545.121
+            text = "9"
+        intervals [336]
+            xmin = 545.121
+            xmax = 546.56
+            text = "7"
+        intervals [337]
+            xmin = 546.56
+            xmax = 546.562
+            text = ""
+        intervals [338]
+            xmin = 546.562
+            xmax = 547.575
+            text = "4"
+        intervals [339]
+            xmin = 547.575
+            xmax = 547.577
+            text = ""
+        intervals [340]
+            xmin = 547.577
+            xmax = 548.277
+            text = "7"
+        intervals [341]
+            xmin = 548.277
+            xmax = 549.057
+            text = "4"
+        intervals [342]
+            xmin = 549.057
+            xmax = 549.309
+            text = "1"
+        intervals [343]
+            xmin = 549.309
+            xmax = 549.961
+            text = "4"
+        intervals [344]
+            xmin = 549.961
+            xmax = 551.433
+            text = "7"
+        intervals [345]
+            xmin = 551.433
+            xmax = 551.905
+            text = "4"
+        intervals [346]
+            xmin = 551.905
+            xmax = 554.51
+            text = "7"
+        intervals [347]
+            xmin = 554.51
+            xmax = 554.512
+            text = ""
+        intervals [348]
+            xmin = 554.512
+            xmax = 555.697
+            text = "4"
+        intervals [349]
+            xmin = 555.697
+            xmax = 557.686
+            text = "5"
+        intervals [350]
+            xmin = 557.686
+            xmax = 558.406
+            text = "4"
+        intervals [351]
+            xmin = 558.406
+            xmax = 559.01
+            text = "7"
+        intervals [352]
+            xmin = 559.01
+            xmax = 559.652
+            text = "4"
+        intervals [353]
+            xmin = 559.652
+            xmax = 562.439
+            text = "5"
+        intervals [354]
+            xmin = 562.439
+            xmax = 562.819
+            text = "4"
+        intervals [355]
+            xmin = 562.819
+            xmax = 563.752
+            text = "7"
+        intervals [356]
+            xmin = 563.752
+            xmax = 564.669
+            text = "5"
+        intervals [357]
+            xmin = 564.669
+            xmax = 564.93
+            text = "4"
+        intervals [358]
+            xmin = 564.93
+            xmax = 567.352
+            text = "7"
+        intervals [359]
+            xmin = 567.352
+            xmax = 569.713
+            text = "4"
+        intervals [360]
+            xmin = 569.713
+            xmax = 570.237
+            text = "7"
+        intervals [361]
+            xmin = 570.237
+            xmax = 572.057
+            text = "5"
+        intervals [362]
+            xmin = 572.057
+            xmax = 573.687
+            text = "7"
+        intervals [363]
+            xmin = 573.687
+            xmax = 574.042
+            text = "4"
+        intervals [364]
+            xmin = 574.042
+            xmax = 574.381
+            text = "1"
+        intervals [365]
+            xmin = 574.381
+            xmax = 574.681
+            text = "2"
+        intervals [366]
+            xmin = 574.681
+            xmax = 574.916
+            text = "4"
+        intervals [367]
+            xmin = 574.916
+            xmax = 575.508
+            text = "7"
+        intervals [368]
+            xmin = 575.508
+            xmax = 578.295
+            text = "5"
+        intervals [369]
+            xmin = 578.295
+            xmax = 445.642
+            text = "2 4"
+        intervals [370]
+            xmin = 445.642
+            xmax = 578.623
+            text = ""
+        intervals [371]
+            xmin = 578.623
+            xmax = 578.754
+            text = "1"
+        intervals [372]
+            xmin = 578.754
+            xmax = 625.44
+            text = ""
