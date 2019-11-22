@@ -104,9 +104,15 @@ def create_transition_graph_from_dict(pattern_dict, withFive = True):
     return machine
 
 
-def create_recurrence_plot_from_intervaltier(interval_tier, destination):
+def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFive=True):
     data_points = [interval.mark() for interval in interval_tier]
-    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=0)
+
+    if not withFive:
+        for mark in data_points:
+            if mark == 5:
+                del mark
+
+    time_series = TimeSeries(data_points, embedding_dimension=1, time_delay=0)
     settings = Settings(time_series,
                         computing_type=ComputingType.Classic,
                         neighbourhood=FixedRadius(0.65),
@@ -120,17 +126,23 @@ def create_recurrence_plot_from_intervaltier(interval_tier, destination):
     result.min_vertical_line_length = 2
     result.min_white_vertical_line_lelngth = 2
     print(result)
+    with open(destination + "_recAnal.txt", mode='w') as file:
+        file.write(str(result))
 
     computation = RPComputation.create(settings)
     result = computation.run()
     ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
-                                        destination)
+                                        destination + "_recPlot.png")
 
 def cleanup_IntervalTier(intervals):
 
+
+    # change interval marks to literals where applicable
     for interval in intervals:
         if len(interval.mark()) > 1:
             interval.change_text(interval.mark()[0])
+
+    intervals.delete_doubles()
 
 def do_Analysis(withFive = True):
     regex = r'(\d*_*vp\d*)_.*\.TextGrid'
@@ -162,9 +174,9 @@ def do_Analysis(withFive = True):
 
     for vp_nr in VP_TextGrids:
         create_recurrence_plot_from_intervaltier(VP_TextGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
-                                                                                         vp_nr + "_recPlot.png"))
+                                                                                         vp_nr), withFive)
 
 
 if __name__ == '__main__':
 
-    do_Analysis(withFive=False)
+    do_Analysis(withFive=True)
