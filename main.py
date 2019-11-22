@@ -40,7 +40,8 @@ def analyze_eye_movement_patterns(interval_tier):
         else:
             try:
                 next_direction = int(interval.mark())
-                pattern_dict[current_direction][next_direction] += 1
+                if next_direction != current_direction:
+                    pattern_dict[current_direction][next_direction] += 1
 
                 current_direction = next_direction
 
@@ -108,9 +109,22 @@ def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFiv
     data_points = [interval.mark() for interval in interval_tier]
 
     if not withFive:
-        for mark in data_points:
-            if mark == 5:
-                del mark
+        data_points = [mark for mark in data_points if mark != '5']
+
+    dic = dict()
+    to_remove = []
+    for n in range(len(data_points)):
+        dic[n] = data_points[n]
+
+    for key in dic:
+        if key == 0:
+            continue
+        if dic[key] == dic[key-1]:
+            to_remove.append(key)
+    for n in to_remove:
+        del dic[n]
+
+    data_points = list(dic.values())
 
     time_series = TimeSeries(data_points, embedding_dimension=1, time_delay=0)
     settings = Settings(time_series,
@@ -141,8 +155,6 @@ def cleanup_IntervalTier(intervals):
     for interval in intervals:
         if len(interval.mark()) > 1:
             interval.change_text(interval.mark()[0])
-
-    intervals.delete_doubles()
 
 def do_Analysis(withFive = True):
     regex = r'(\d*_*vp\d*)_.*\.TextGrid'
