@@ -2,58 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="Recurrence Analysis works on ubuntu now">
-      <change beforePath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py.bak" beforeDir="false" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/python3.5/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" afterPath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" afterPath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" afterPath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="138" column="40" lean-forward="true" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,9 +78,58 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="91d34391afa08f87cd8dafeee53230f007c38400" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/praat.py" />
+        <option value="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1S0d0E8Vr5bL1BXGNuuUlAjz5wO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jkernos-Analyse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jkernos-Analyse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jkernos-Analyse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jkernos-Analyse" type="462c0819:PsiDirectoryNode" />
+              <item name="Analysen" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
@@ -82,12 +137,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages" />
-      <recent name="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs\Words" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs\Blickrichtungen" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs" />
@@ -107,7 +160,6 @@
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jkernos-Analyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -118,17 +170,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jkernos-Analyse" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="scratch_12" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jkernos-Analyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -139,21 +187,24 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="jkernos-Analyse" />
       <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.scratch_12" />
+    </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.scratch_12" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -183,13 +234,53 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="250" y="70" width="2497" height="1452" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22805612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22944693" sideWeight="0.50420845" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22944693" sideWeight="0.49579158" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22998872" sideWeight="0.50244796" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22998872" sideWeight="0.497552" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22827417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
             </State>
           </value>
         </entry>
@@ -199,5 +290,294 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Recurrence Analysis works on ubuntu now" />
     <option name="LAST_COMMIT_MESSAGE" value="Recurrence Analysis works on ubuntu now" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///usr/local/lib/python3.7/dist-packages/transitions/extensions/diagrams_graphviz.py" />
+    <entry file="file://$PROJECT_DIR$/recurrence_plot2.png" />
+    <entry file="file://$PROJECT_DIR$/recurrence_plot.png" />
+    <entry file="file://$PROJECT_DIR$/VPs/Blickrichtungen/2_vp11_Blickrichtungen.TextGrid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1740">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VPs/Blickrichtungen/3_vp11_Blickrichtungen.TextGrid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="1489" column="24" lean-forward="false" selection-start-line="1489" selection-start-column="19" selection-end-line="1489" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/re.py" />
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/pyrqa/time_series.py" />
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/vp11_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/vp12_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/vp21_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/vp22_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/vp31_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VPs/Blickrichtungen/3_vp21_Blickrichtungen.TextGrid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_0_1radius.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="563" column="8" lean-forward="false" selection-start-line="563" selection-start-column="8" selection-end-line="563" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/praat.py" />
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp12_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp21_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp22_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp31_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp11_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp12_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/3_vp21_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp11_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp12_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp31_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp11_recAnal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="138" column="40" lean-forward="true" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

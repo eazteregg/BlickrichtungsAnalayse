@@ -136,9 +136,9 @@ def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFiv
     computation = RQAComputation.create(settings,
                                         verbose=True)
     result = computation.run()
-    result.min_diagonal_line_length = 2
-    result.min_vertical_line_length = 2
-    result.min_white_vertical_line_lelngth = 2
+    #result.min_diagonal_line_length = 2
+    #result.min_vertical_line_length = 2
+    #result.min_white_vertical_line_lelngth = 2
     print(result)
     with open(destination + "_recAnal.txt", mode='w') as file:
         file.write(str(result))
