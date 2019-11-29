@@ -150,6 +150,8 @@ def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFiv
 
 
 def cleanup_IntervalTier(intervals):
+
+
     # change interval marks to literals where applicable
     for interval in intervals:
         if len(interval.mark()) > 1:
