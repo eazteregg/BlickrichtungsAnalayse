@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="Recurrence Analysis works on ubuntu now">
-      <change beforePath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Colored_CodingGrid.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" afterDir="false" />
@@ -31,23 +43,7 @@
       <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages/praatclasses/praat.py.bak" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +72,7 @@
   <component name="ProjectId" id="1S0d0E8Vr5bL1BXGNuuUlAjz5wO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -148,9 +145,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch_13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jkernos-Analyse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.scratch_13" />
         <item itemvalue="Python.scratch_12" />
       </list>
     </recent_temporary>
@@ -180,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574424408581</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improve Recurrence Analysis">
+      <created>1574430605118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574430605118</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Recurrence Analysis works on ubuntu now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recurrence Analysis works on ubuntu now" />
+    <MESSAGE value="Improve Recurrence Analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve Recurrence Analysis" />
   </component>
 </project>
