@@ -1,48 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Colored_CodingGrid.png" afterDir="false" />
+    <list default="true" id="fb556bb8-8adb-451f-8db9-c61da864ab19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp22_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/2_vp31_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/3_vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp11_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp12_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp21_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp22_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/csv/vp31_tabelle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp22_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/2_vp31_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/3_vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp11_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp12_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp21_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp22_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/graphs/vp31_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -179,7 +152,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="" />
+      <changelist id="fb556bb8-8adb-451f-8db9-c61da864ab19" name="Default Changelist" comment="" />
       <created>1570704221047</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -206,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574430605118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py">
+      <created>1575038245963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575038245963</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +205,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Recurrence Analysis works on ubuntu now" />
     <MESSAGE value="Improve Recurrence Analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve Recurrence Analysis" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
   </component>
 </project>
