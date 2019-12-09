@@ -1,0 +1,166 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 652.854
+tiers? <exists>
+size = 1
+item []:
+    item[1]:
+        class = "IntervalTier"
+        name = "Think_and_answer"
+        xmin = 0.0
+        xmax = 652.854
+        intervals: size = 38
+        intervals [1]
+            xmin = 0.0
+            xmax = 13.34
+            text = ""
+        intervals [2]
+            xmin = 13.34
+            xmax = 16.6
+            text = "Tsm"
+        intervals [3]
+            xmin = 16.6
+            xmax = 16.613
+            text = ""
+        intervals [4]
+            xmin = 16.613
+            xmax = 25.517
+            text = "Asm"
+        intervals [5]
+            xmin = 25.517
+            xmax = 37.98
+            text = ""
+        intervals [6]
+            xmin = 37.98
+            xmax = 43.588
+            text = "Tpo"
+        intervals [7]
+            xmin = 43.588
+            xmax = 58.598
+            text = "Apo"
+        intervals [8]
+            xmin = 58.598
+            xmax = 73.85
+            text = ""
+        intervals [9]
+            xmin = 73.85
+            xmax = 83.48
+            text = "Tpf"
+        intervals [10]
+            xmin = 83.48
+            xmax = 99.14
+            text = "Apf"
+        intervals [11]
+            xmin = 99.14
+            xmax = 114.0
+            text = ""
+        intervals [12]
+            xmin = 114.0
+            xmax = 126.03
+            text = "Tff"
+        intervals [13]
+            xmin = 126.03
+            xmax = 144.691
+            text = "Aff"
+        intervals [14]
+            xmin = 144.691
+            xmax = 161.82
+            text = ""
+        intervals [15]
+            xmin = 161.82
+            xmax = 167.674
+            text = "Tfo"
+        intervals [16]
+            xmin = 167.674
+            xmax = 188.243
+            text = "Afo"
+        intervals [17]
+            xmin = 188.243
+            xmax = 200.52
+            text = ""
+        intervals [18]
+            xmin = 200.52
+            xmax = 203.313
+            text = "Tsm"
+        intervals [19]
+            xmin = 203.313
+            xmax = 223.21
+            text = "Asm"
+        intervals [20]
+            xmin = 223.21
+            xmax = 234.15
+            text = ""
+        intervals [21]
+            xmin = 234.15
+            xmax = 244.87
+            text = "Tpf"
+        intervals [22]
+            xmin = 244.87
+            xmax = 270.52
+            text = "Apf"
+        intervals [23]
+            xmin = 270.52
+            xmax = 286.4
+            text = ""
+        intervals [24]
+            xmin = 286.4
+            xmax = 289.85
+            text = "Tsm"
+        intervals [25]
+            xmin = 289.85
+            xmax = 313.27
+            text = "Asm"
+        intervals [26]
+            xmin = 313.27
+            xmax = 323.54
+            text = ""
+        intervals [27]
+            xmin = 323.54
+            xmax = 326.542
+            text = "Tso"
+        intervals [28]
+            xmin = 326.542
+            xmax = 343.686
+            text = "Aso"
+        intervals [29]
+            xmin = 343.686
+            xmax = 355.01
+            text = ""
+        intervals [30]
+            xmin = 355.01
+            xmax = 360.894
+            text = "Tpo"
+        intervals [31]
+            xmin = 360.894
+            xmax = 370.656
+            text = "Apo"
+        intervals [32]
+            xmin = 370.656
+            xmax = 388.52
+            text = ""
+        intervals [33]
+            xmin = 388.52
+            xmax = 397.174
+            text = "Tfo"
+        intervals [34]
+            xmin = 397.174
+            xmax = 409.16
+            text = "Afo"
+        intervals [35]
+            xmin = 409.16
+            xmax = 424.91
+            text = ""
+        intervals [36]
+            xmin = 424.91
+            xmax = 433.192
+            text = "Tfo"
+        intervals [37]
+            xmin = 433.192
+            xmax = 452.81
+            text = "Afo"
+        intervals [38]
+            xmin = 452.81
+            xmax = 652.854
+            text = ""

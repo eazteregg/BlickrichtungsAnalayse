@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 625.44
+tiers? <exists>
+size = 1
+item []:
+    item[1]:
+        class = "IntervalTier"
+        name = "Think_and_answer"
+        xmin = 0.0
+        xmax = 625.44
+        intervals: size = 37
+        intervals [1]
+            xmin = 0.0
+            xmax = 7.83
+            text = ""
+        intervals [2]
+            xmin = 7.83
+            xmax = 13.463
+            text = "Tpo"
+        intervals [3]
+            xmin = 13.463
+            xmax = 18.323
+            text = "Apo"
+        intervals [4]
+            xmin = 18.323
+            xmax = 36.42
+            text = ""
+        intervals [5]
+            xmin = 36.42
+            xmax = 41.75
+            text = "Tpo"
+        intervals [6]
+            xmin = 41.75
+            xmax = 59.26
+            text = "Apo"
+        intervals [7]
+            xmin = 59.26
+            xmax = 73.55
+            text = ""
+        intervals [8]
+            xmin = 73.55
+            xmax = 76.895
+            text = "Tso"
+        intervals [9]
+            xmin = 76.895
+            xmax = 96.585
+            text = "Aso"
+        intervals [10]
+            xmin = 96.585
+            xmax = 114.105
+            text = ""
+        intervals [11]
+            xmin = 114.105
+            xmax = 123.441
+            text = "Tfm"
+        intervals [12]
+            xmin = 123.441
+            xmax = 136.591
+            text = "Afm"
+        intervals [13]
+            xmin = 136.591
+            xmax = 151.971
+            text = ""
+        intervals [14]
+            xmin = 151.971
+            xmax = 156.491
+            text = "Tsf"
+        intervals [15]
+            xmin = 156.491
+            xmax = 182.407
+            text = "Asf"
+        intervals [16]
+            xmin = 182.407
+            xmax = 201.627
+            text = ""
+        intervals [17]
+            xmin = 201.627
+            xmax = 204.827
+            text = "Tsf"
+        intervals [18]
+            xmin = 204.827
+            xmax = 244.648
+            text = "Asf"
+        intervals [19]
+            xmin = 244.648
+            xmax = 256.458
+            text = ""
+        intervals [20]
+            xmin = 256.458
+            xmax = 263.179
+            text = "Tpo"
+        intervals [21]
+            xmin = 263.179
+            xmax = 299.209
+            text = "Apo"
+        intervals [22]
+            xmin = 299.209
+            xmax = 326.269
+            text = ""
+        intervals [23]
+            xmin = 326.269
+            xmax = 332.159
+            text = "Tfm"
+        intervals [24]
+            xmin = 332.159
+            xmax = 355.8
+            text = "Afm"
+        intervals [25]
+            xmin = 355.8
+            xmax = 377.734
+            text = ""
+        intervals [26]
+            xmin = 377.734
+            xmax = 392.784
+            text = "Tpf"
+        intervals [27]
+            xmin = 392.784
+            xmax = 414.088
+            text = "Apf"
+        intervals [28]
+            xmin = 414.088
+            xmax = 432.607
+            text = ""
+        intervals [29]
+            xmin = 432.607
+            xmax = 438.357
+            text = "Tfo"
+        intervals [30]
+            xmin = 438.357
+            xmax = 456.238
+            text = "Afo"
+        intervals [31]
+            xmin = 456.238
+            xmax = 478.368
+            text = ""
+        intervals [32]
+            xmin = 478.368
+            xmax = 481.45
+            text = "Tsm"
+        intervals [33]
+            xmin = 481.45
+            xmax = 518.07
+            text = "Asm"
+        intervals [34]
+            xmin = 518.07
+            xmax = 540.468
+            text = ""
+        intervals [35]
+            xmin = 540.468
+            xmax = 552.657
+            text = "Tfo"
+        intervals [36]
+            xmin = 552.657
+            xmax = 578.74
+            text = "Afo"
+        intervals [37]
+            xmin = 578.74
+            xmax = 625.44
+            text = ""

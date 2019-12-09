@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 749.28
+tiers? <exists>
+size = 1
+item []:
+    item[1]:
+        class = "IntervalTier"
+        name = "Think_and_answer"
+        xmin = 0.0
+        xmax = 749.28
+        intervals: size = 37
+        intervals [1]
+            xmin = 0.0
+            xmax = 17.09
+            text = ""
+        intervals [2]
+            xmin = 17.09
+            xmax = 19.73
+            text = "Tsm"
+        intervals [3]
+            xmin = 19.73
+            xmax = 35.122
+            text = "Asm"
+        intervals [4]
+            xmin = 35.122
+            xmax = 55.4
+            text = ""
+        intervals [5]
+            xmin = 55.4
+            xmax = 61.938
+            text = "Tpo"
+        intervals [6]
+            xmin = 61.938
+            xmax = 98.777
+            text = "Apo"
+        intervals [7]
+            xmin = 98.777
+            xmax = 120.548
+            text = ""
+        intervals [8]
+            xmin = 120.548
+            xmax = 129.925
+            text = "Tpf"
+        intervals [9]
+            xmin = 129.925
+            xmax = 151.84
+            text = "Apf"
+        intervals [10]
+            xmin = 151.84
+            xmax = 171.852
+            text = ""
+        intervals [11]
+            xmin = 171.852
+            xmax = 187.791
+            text = "Tff"
+        intervals [12]
+            xmin = 187.791
+            xmax = 217.544
+            text = "Aff"
+        intervals [13]
+            xmin = 217.544
+            xmax = 239.276
+            text = ""
+        intervals [14]
+            xmin = 239.276
+            xmax = 245.483
+            text = "Tfo"
+        intervals [15]
+            xmin = 245.483
+            xmax = 265.202
+            text = "Afo"
+        intervals [16]
+            xmin = 265.202
+            xmax = 283.684
+            text = ""
+        intervals [17]
+            xmin = 283.684
+            xmax = 287.081
+            text = "Tsm"
+        intervals [18]
+            xmin = 287.081
+            xmax = 327.153
+            text = "Asm"
+        intervals [19]
+            xmin = 327.153
+            xmax = 346.754
+            text = ""
+        intervals [20]
+            xmin = 346.754
+            xmax = 363.281
+            text = "Tpf"
+        intervals [21]
+            xmin = 363.281
+            xmax = 377.443
+            text = "Apf"
+        intervals [22]
+            xmin = 377.443
+            xmax = 402.254
+            text = ""
+        intervals [23]
+            xmin = 402.254
+            xmax = 405.918
+            text = "Tsm"
+        intervals [24]
+            xmin = 405.918
+            xmax = 451.325
+            text = "Asm"
+        intervals [25]
+            xmin = 451.325
+            xmax = 468.635
+            text = ""
+        intervals [26]
+            xmin = 468.635
+            xmax = 472.923
+            text = "Tso"
+        intervals [27]
+            xmin = 472.923
+            xmax = 530.958
+            text = "Aso"
+        intervals [28]
+            xmin = 530.958
+            xmax = 555.468
+            text = ""
+        intervals [29]
+            xmin = 555.468
+            xmax = 562.174
+            text = "Tpo"
+        intervals [30]
+            xmin = 562.174
+            xmax = 601.877
+            text = "Apo"
+        intervals [31]
+            xmin = 601.877
+            xmax = 621.747
+            text = ""
+        intervals [32]
+            xmin = 621.747
+            xmax = 628.667
+            text = "Tfo"
+        intervals [33]
+            xmin = 628.667
+            xmax = 653.81
+            text = "Afo"
+        intervals [34]
+            xmin = 653.81
+            xmax = 674.79
+            text = ""
+        intervals [35]
+            xmin = 674.79
+            xmax = 680.11
+            text = "Tfo"
+        intervals [36]
+            xmin = 680.11
+            xmax = 704.455
+            text = "Afo"
+        intervals [37]
+            xmin = 704.455
+            xmax = 749.28
+            text = ""

@@ -1,0 +1,162 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 989.334
+tiers? <exists>
+size = 1
+item []:
+    item[1]:
+        class = "IntervalTier"
+        name = "Think_and_answer"
+        xmin = 0.0
+        xmax = 989.334
+        intervals: size = 37
+        intervals [1]
+            xmin = 0.0
+            xmax = 10.66
+            text = ""
+        intervals [2]
+            xmin = 10.66
+            xmax = 16.8
+            text = "Tfo"
+        intervals [3]
+            xmin = 16.8
+            xmax = 41.34
+            text = "Afo "
+        intervals [4]
+            xmin = 41.34
+            xmax = 65.4
+            text = ""
+        intervals [5]
+            xmin = 65.4
+            xmax = 76.947
+            text = "Tpo"
+        intervals [6]
+            xmin = 76.947
+            xmax = 113.285
+            text = "Apo"
+        intervals [7]
+            xmin = 113.285
+            xmax = 136.268
+            text = ""
+        intervals [8]
+            xmin = 136.268
+            xmax = 142.158
+            text = "Tfm"
+        intervals [9]
+            xmin = 142.158
+            xmax = 173.537
+            text = "Afm"
+        intervals [10]
+            xmin = 173.537
+            xmax = 208.926
+            text = ""
+        intervals [11]
+            xmin = 208.926
+            xmax = 214.87
+            text = "Tpf"
+        intervals [12]
+            xmin = 214.87
+            xmax = 276.803
+            text = "Apf"
+        intervals [13]
+            xmin = 276.803
+            xmax = 301.93
+            text = ""
+        intervals [14]
+            xmin = 301.93
+            xmax = 308.35
+            text = "Tpm"
+        intervals [15]
+            xmin = 308.35
+            xmax = 350.27
+            text = "Apm"
+        intervals [16]
+            xmin = 350.27
+            xmax = 387.19
+            text = ""
+        intervals [17]
+            xmin = 387.19
+            xmax = 390.71
+            text = "Tsm"
+        intervals [18]
+            xmin = 390.71
+            xmax = 440.53
+            text = "Asm"
+        intervals [19]
+            xmin = 440.53
+            xmax = 460.515
+            text = ""
+        intervals [20]
+            xmin = 460.515
+            xmax = 468.744
+            text = "Tff"
+        intervals [21]
+            xmin = 468.744
+            xmax = 514.21
+            text = "Aff"
+        intervals [22]
+            xmin = 514.21
+            xmax = 537.86
+            text = ""
+        intervals [23]
+            xmin = 537.86
+            xmax = 544.306
+            text = "Tpo"
+        intervals [24]
+            xmin = 544.306
+            xmax = 614.68
+            text = "Apo"
+        intervals [25]
+            xmin = 614.68
+            xmax = 633.62
+            text = ""
+        intervals [26]
+            xmin = 633.62
+            xmax = 636.82
+            text = "Tso"
+        intervals [27]
+            xmin = 636.82
+            xmax = 671.122
+            text = "Aso"
+        intervals [28]
+            xmin = 671.122
+            xmax = 695.3
+            text = ""
+        intervals [29]
+            xmin = 695.3
+            xmax = 698.77
+            text = "Tsf"
+        intervals [30]
+            xmin = 698.77
+            xmax = 744.08
+            text = "Asf"
+        intervals [31]
+            xmin = 744.08
+            xmax = 759.06
+            text = ""
+        intervals [32]
+            xmin = 759.06
+            xmax = 764.77
+            text = "Tfo"
+        intervals [33]
+            xmin = 764.77
+            xmax = 824.6
+            text = "Afo"
+        intervals [34]
+            xmin = 824.6
+            xmax = 845.14
+            text = ""
+        intervals [35]
+            xmin = 845.14
+            xmax = 848.912
+            text = "Tso"
+        intervals [36]
+            xmin = 848.912
+            xmax = 932.55
+            text = "Aso"
+        intervals [37]
+            xmin = 932.55
+            xmax = 989.334
+            text = ""
