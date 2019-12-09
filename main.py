@@ -1,6 +1,5 @@
 import csv
 import os
-import pyrqa as rqa
 from pyrqa.time_series import TimeSeries
 from pyrqa.settings import Settings
 from pyrqa.computing_type import ComputingType
@@ -10,13 +9,23 @@ from pyrqa.computation import RQAComputation
 from pyrqa.computation import RPComputation
 from pyrqa.image_generator import ImageGenerator
 from collections import defaultdict
-
+import re
 from praatclasses import TextGrid
 from transitions.extensions import GraphMachine as Machine
+from PIL import Image, ImageDraw
 
 VP_WORDS_PATH = os.path.join('VPs', 'Words')
 VP_BLICKRICHTUNGEN_PATH = os.path.join('VPs', 'Blickrichtungen')
 ANALYSEN_PATH = 'Analysen'
+CSV_PATH = 'csv'
+GRAPH_PATH = 'graphs'
+RECURRENCE_PATH = 'recPlots'
+# change this dictionary if you want to change how the gaze directions are translated into colors; for current setup see
+# Colored_CodingGrid.png
+NUMBER2COLOR = {0: (102, 102, 102), 1: (0, 204, 255), 2: (0, 0, 255), 3: (0, 0, 128), 4: (102, 255, 51), 5: (0, 255, 0),
+                6: (0, 128, 0), 7: (255, 128, 128), 8: (255, 0, 0), 9: (128, 0, 0)}
+GREY1 = (191,191,191)
+GREY2 = (64, 64, 64)
 
 
 def analyze_eye_movement_patterns(interval_tier):
@@ -27,46 +36,69 @@ def analyze_eye_movement_patterns(interval_tier):
     current_direction = None
 
     for interval in interval_tier:
+
         if current_direction is None:
-            current_direction = int(interval.mark())
+            try:
+                current_direction = int(interval.mark())
+            except ValueError:
+                del interval
+                continue
         else:
-            next_direction = int(interval.mark())
+            try:
+                next_direction = int(interval.mark())
+                if next_direction != current_direction:
+                    pattern_dict[current_direction][next_direction] += 1
 
-            pattern_dict[current_direction][next_direction] += 1
+                current_direction = next_direction
 
-            current_direction = next_direction
+            except ValueError:
+                del interval
+                continue
 
     return pattern_dict
 
 
-def compute_relative_frequencies(pattern_dict):
+def compute_relative_frequencies(pattern_dict, withFive=True):
     for blickrichtung in pattern_dict:
         sum = 0
-        for k, v in pattern_dict[blickrichtung].items():
+        for key, v in pattern_dict[blickrichtung].items():
+            if not withFive and key == 5:
+                continue
             sum += v
 
         for key in pattern_dict[blickrichtung]:
+            if not withFive and key == 5:
+                continue
             value = pattern_dict[blickrichtung][key]
             pattern_dict[blickrichtung][key] = round(value / sum, 2)
 
     return pattern_dict
 
 
-def write_movementpattern_to_csv(filename, pattern_dict):
+def write_movementpattern_to_csv(filename, pattern_dict, withFive=True):
     with open(filename, mode='w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([None] + [str(x) for x in range(0, 10)])
         for blickrichtung in pattern_dict:
+
+            if not withFive and blickrichtung == 5:
+                continue
             row = [str(pattern_dict[blickrichtung][x]) for x in range(0, 10)]
             writer.writerow([str(blickrichtung)] + row)
 
 
-def create_transition_graph_from_dict(pattern_dict):
-    machine = Machine(states=[str(x) for x in pattern_dict.keys()], use_pygraphviz=False)
+def create_transition_graph_from_dict(pattern_dict, withFive=True):
+    if withFive:
+        machine = Machine(states=[str(x) for x in pattern_dict.keys()], use_pygraphviz=False)
+
+    else:
+        machine = Machine(states=[str(x) for x in pattern_dict.keys() if x != 5], use_pygraphviz=False)
 
     for blickrichtung in pattern_dict:
         for next_blckrchtng in pattern_dict[blickrichtung]:
 
+            if not withFive and (blickrichtung == 5 or next_blckrchtng == 5):
+                continue
             if pattern_dict[blickrichtung][next_blckrchtng] == 0:
                 continue
 
@@ -76,9 +108,19 @@ def create_transition_graph_from_dict(pattern_dict):
     return machine
 
 
-def create_recurrence_plot_from_intervaltier(interval_tier):
+def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFive=True):
+
+    # turn interval tier into list of marks
     data_points = [interval.mark() for interval in interval_tier]
-    time_series = TimeSeries(data_points, embedding_dimension=2, time_delay=2)
+
+    # remove all fives if desired
+    if not withFive:
+        data_points = [mark for mark in data_points if mark != '5']
+
+    data_points_clean = remove_doubles_from_list(data_points)
+
+
+    time_series = TimeSeries(data_points_clean, embedding_dimension=1, time_delay=0)
     settings = Settings(time_series,
                         computing_type=ComputingType.Classic,
                         neighbourhood=FixedRadius(0.65),
@@ -91,27 +133,138 @@ def create_recurrence_plot_from_intervaltier(interval_tier):
     result.min_diagonal_line_length = 2
     result.min_vertical_line_length = 2
     result.min_white_vertical_line_lelngth = 2
-    print(result)
+    with open(destination + "_recAnal.txt", mode='w') as file:
+        file.write(str(result))
 
     computation = RPComputation.create(settings)
     result = computation.run()
     ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
-                                        'recurrence_plot2.png')
+                                        destination + "_recPlot.png")
+
+    add_numbers_to_recurrence_plot(data_points, destination + "_recPlot.png")
+
+
+def remove_doubles_from_list(data_points):
+
+    # this elaborate code is designed to remove all subsequently recurring numbers in the gaze directions.
+    # needed because during the encoding process, two subsequent 5s were sometimes placed right next to each other
+    dic = dict()
+    to_remove = []
+    # enumerate all data points
+    for n in range(len(data_points)):
+        dic[n] = data_points[n]
+    for key in dic:
+        # can't remove the first one, so skip
+        if key == 0:
+            continue
+        # if the two values next to each other are the same, ad done of them to the 2remove list
+        if dic[key] == dic[key - 1]:
+            to_remove.append(key)
+    # remove all previously identified values
+    for n in to_remove:
+        del dic[n]
+    return list(dic.values())
+
+
+def cleanup_IntervalTier(intervals):
+
+    # change interval marks to literals where applicable
+    for interval in intervals:
+        if len(interval.mark()) > 1:
+            interval.change_text(interval.mark()[0])
+
+
+def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
+
+    # open recurrence plot
+    plotIm = Image.open(recPlot)
+
+    if not withQuestions:
+        horiOffset = 1
+    else:
+        horiOffset = 2
+    # create new image, but 1px or 2px wider and 1px higher, depending on withQuestions, with backgroundcolor white
+    newPlotIm = Image.new(plotIm.mode, (plotIm.width + horiOffset, plotIm.height + 1), color='white')
+    # paste the opened recPlot into the new image at location (1,0) so that there remains a white strip to the left and
+    # at the bottom of the new image
+    newPlotIm.paste(plotIm, box=(horiOffset, 0))
+
+    # create a dictionary to store the colors representing the numbers in; for reference see Colored_CodingGrid.png
+    number_color_dict = dict()
+
+    # fill in the colors corresponding to the numbers as specified in NUMBER2COLOR
+    for number in NUMBER2COLOR:
+        number_color_dict[NUMBER2COLOR[number]] = []
+
+    numbers_clean = remove_doubles_from_list(numbers)
+
+    # fill in the dictionary with points at which to draw a particular color
+    for number in range(len(numbers_clean)):
+        number_color_dict[NUMBER2COLOR[int(numbers_clean[number])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
+
+    plotDraw = ImageDraw.Draw(newPlotIm)
+
+    if withQuestions:
+        for color in number_color_dict:
+             plotDraw.point(number_color_dict[color], color)
+
+        question_color_dict = dict()
+        question_color_dict[GREY1] = [(0, newPlotIm.height-2)]
+        question_color_dict[GREY2] = []
+
+        grey = GREY1
+        fivesfound = 0
+        for n in range(len(numbers)):
+
+            if n == 0:
+                continue
+            if numbers[n] == '5' and  numbers[n-1] == '5':
+                fivesfound +=1
+                if grey == GREY1:
+                    grey = GREY2
+                else:
+                    grey = GREY1
+            else:
+                question_color_dict[grey] += (0, (newPlotIm.height -2) - (n-fivesfound))
+
+        for color in question_color_dict:
+            plotDraw.point(question_color_dict[color], color)
+
+
+    newPlotIm.save(recPlot[:-4] + "_numbered.png")
+
+def do_Analysis(withFive=True):
+    regex = r'(\d*_*vp\d*)_.*\.TextGrid'
+
+    VP_TextGrids = dict()
+
+    for filename in os.listdir(VP_BLICKRICHTUNGEN_PATH):
+        mo = re.search(regex, filename)
+        if mo:
+            vp_nr = mo.group(1)
+            VP_TextGrids[vp_nr] = TextGrid()
+            VP_TextGrids[vp_nr].read(os.path.join(VP_BLICKRICHTUNGEN_PATH, filename))
+            VP_TextGrids[vp_nr][0].delete_empty()
+            cleanup_IntervalTier(VP_TextGrids[vp_nr][0])
+
+    VP_PatternDicts = dict()
+
+    for vp_nr in VP_TextGrids:
+        VP_PatternDicts[vp_nr] = analyze_eye_movement_patterns(VP_TextGrids[vp_nr][0])
+
+        compute_relative_frequencies(VP_PatternDicts[vp_nr], withFive)
+
+    for vp_nr in VP_PatternDicts:
+        write_movementpattern_to_csv(os.path.join(ANALYSEN_PATH, CSV_PATH, vp_nr + "_tabelle.csv"),
+                                     VP_PatternDicts[vp_nr])
+
+        machine = create_transition_graph_from_dict(VP_PatternDicts[vp_nr], withFive)
+        machine.get_combined_graph().draw(os.path.join(ANALYSEN_PATH, GRAPH_PATH, vp_nr + "_graph.png"))
+
+    for vp_nr in VP_TextGrids:
+        create_recurrence_plot_from_intervaltier(VP_TextGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
+                                                                                      vp_nr), withFive)
+
 
 if __name__ == '__main__':
-    # textgrid = TextGrid()
-    # textgrid.read("2_vp21_words.TextGrid")
-    # print(textgrid)
-
-    textgrid2 = TextGrid()
-    textgrid2.read(os.path.join(VP_BLICKRICHTUNGEN_PATH, '2_vp21_Blickrichtung.TextGrid'))
-    print(textgrid2[0])
-    textgrid2[0].delete_empty()
-    print(textgrid2[0])
-    pattern_dict = analyze_eye_movement_patterns(textgrid2[0])
-    print(pattern_dict)
-    print(compute_relative_frequencies(pattern_dict))
-    write_movementpattern_to_csv(os.path.join(ANALYSEN_PATH, 'Blickrichtungsanalyse'), pattern_dict)
-    machine = create_transition_graph_from_dict(pattern_dict)
-    machine.get_combined_graph().draw("Blickrichtungsgraph.png")
-    create_recurrence_plot_from_intervaltier(textgrid2[0])
+    do_Analysis(withFive=True)

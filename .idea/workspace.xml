@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="Default Changelist">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recurrence_plot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blickrichtungsgraph.png" afterPath="$PROJECT_DIR$/Blickrichtungsgraph.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" afterPath="$PROJECT_DIR$/.idea/jkernos-Analyse.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysen/Blickrichtungsanalyse" afterPath="$PROJECT_DIR$/Analysen/Blickrichtungsanalyse" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+    <list default="true" id="fb556bb8-8adb-451f-8db9-c61da864ab19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp11_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="110" column="45" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,78 +31,36 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;2 4&quot;</find>
+      <find>m</find>
+      <find>&quot;4&quot;</find>
+      <find>&quot;&quot;</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/praat.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="250" />
-    <option name="y" value="70" />
-    <option name="width" value="932" />
-    <option name="height" value="594" />
-  </component>
   <component name="ProjectId" id="1S0d0E8Vr5bL1BXGNuuUlAjz5wO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jkernos-Analyse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jkernos-Analyse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jkernos-Analyse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jkernos-Analyse" type="462c0819:PsiDirectoryNode" />
-              <item name="VPs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jkernos-Analyse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jkernos-Analyse" type="462c0819:PsiDirectoryNode" />
-              <item name="VPs" type="462c0819:PsiDirectoryNode" />
-              <item name="Blickrichtungen" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
+      <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/virtualEnv/lib/python3.5/site-packages" />
+      <recent name="$PROJECT_DIR$/venv/lib/python3.7/site-packages" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs\Words" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs\Blickrichtungen" />
       <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse\VPs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\experiment\PycharmProjects\jkernos-Analyse" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,6 +77,7 @@
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jkernos-Analyse" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -138,58 +88,106 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="jkernos-Analyse" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_12" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jkernos-Analyse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jkernos-Analyse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.scratch_13" />
+        <item itemvalue="Python.scratch_12" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f08e70c9-7c2d-46b5-bf08-508f1ce00a18" name="Default Changelist" comment="" />
+      <changelist id="fb556bb8-8adb-451f-8db9-c61da864ab19" name="Default Changelist" comment="" />
       <created>1570704221047</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570704221047</updated>
     </task>
+    <task id="LOCAL-00001" summary="Recurrence Analysis works on ubuntu now">
+      <created>1572864024772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572864024772</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Recurrence Analysis works on ubuntu now">
+      <created>1574424408581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574424408581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improve Recurrence Analysis">
+      <created>1574430605118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574430605118</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py">
+      <created>1575038245963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575038245963</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="250" y="70" width="1680" height="1014" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22215423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22998872" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -197,143 +195,17 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VPs/Blickrichtungen/2_vp21_Blickrichtung.TextGrid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/praat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8505">
-          <caret line="567" column="8" lean-forward="false" selection-start-line="567" selection-start-column="8" selection-end-line="567" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VPs/Blickrichtungen/2_vp21_Blickrichtung.TextGrid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/praatclasses/praat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="567" column="8" lean-forward="false" selection-start-line="567" selection-start-column="8" selection-end-line="567" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/dist-packages/transitions/extensions/diagrams_graphviz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recurrence_plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recurrence_plot2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="110" column="45" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Recurrence Analysis works on ubuntu now" />
+    <MESSAGE value="Improve Recurrence Analysis" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
   </component>
 </project>
