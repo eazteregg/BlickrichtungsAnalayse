@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575038245963</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py">
+      <created>1575634565971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575634565971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,5 +214,16 @@
     <MESSAGE value="Improve Recurrence Analysis" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>233</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

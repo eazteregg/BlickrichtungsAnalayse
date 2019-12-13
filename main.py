@@ -1,4 +1,5 @@
 import csv
+import math
 import os
 from pyrqa.time_series import TimeSeries
 from pyrqa.settings import Settings
@@ -16,6 +17,7 @@ from PIL import Image, ImageDraw
 
 VP_WORDS_PATH = os.path.join('VPs', 'Words')
 VP_BLICKRICHTUNGEN_PATH = os.path.join('VPs', 'Blickrichtungen')
+VP_THINKANSWER_PATH = os.path.join("VPs", "ThinkAnswer")
 ANALYSEN_PATH = 'Analysen'
 CSV_PATH = 'csv'
 GRAPH_PATH = 'graphs'
@@ -24,8 +26,7 @@ RECURRENCE_PATH = 'recPlots'
 # Colored_CodingGrid.png
 NUMBER2COLOR = {0: (102, 102, 102), 1: (0, 204, 255), 2: (0, 0, 255), 3: (0, 0, 128), 4: (102, 255, 51), 5: (0, 255, 0),
                 6: (0, 128, 0), 7: (255, 128, 128), 8: (255, 0, 0), 9: (128, 0, 0)}
-GREY1 = (191,191,191)
-GREY2 = (64, 64, 64)
+TA2COLOR = {"T": (191,191,191), "A": (64, 64, 64) }
 
 
 def analyze_eye_movement_patterns(interval_tier):
@@ -108,16 +109,44 @@ def create_transition_graph_from_dict(pattern_dict, withFive=True):
     return machine
 
 
-def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFive=True):
+def create_recurrence_plot_from_intervaltier(blickrichtung_tier, thinkanswer_tier, destination, withFive=True):
 
+    def create_list_from_thinkanswer_tier(blickrichtung_tier, thinkanswer_tier):
+
+        thinkanswer_list = []
+
+        for blkrchtng in blickrichtung_tier:
+            for ta in thinkanswer_tier:
+                if blkrchtng.xmin() >= ta.xmin() and blkrchtng.xmin() <= ta.xmax():
+                    thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
+                    break
+            else:
+                for ta in thinkanswer_tier:
+                    if math.floor(blkrchtng.xmin()) >= math.floor(ta.xmin()) and blkrchtng.xmin() <= ta.xmax():
+                        thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
+                        break
+                    elif round(blkrchtng.xmin()) >= round(ta.xmin()) and blkrchtng.xmin() <= ta.xmax():
+                        thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
+                        break
+                else:
+                    print("No fit:" + str(blkrchtng))
+
+        return thinkanswer_list
+
+    thinkanswer_list = create_list_from_thinkanswer_tier(blickrichtung_tier, thinkanswer_tier)
+    print("len :" + str(count_TAs(thinkanswer_list)))
     # turn interval tier into list of marks
-    data_points = [interval.mark() for interval in interval_tier]
+    data_points = [interval.mark() for interval in blickrichtung_tier]
+
+    print(len(data_points), " ", len (thinkanswer_list))
 
     # remove all fives if desired
     if not withFive:
         data_points = [mark for mark in data_points if mark != '5']
 
     data_points_clean = remove_doubles_from_list(data_points)
+
+
 
 
     time_series = TimeSeries(data_points_clean, embedding_dimension=1, time_delay=0)
@@ -141,10 +170,11 @@ def create_recurrence_plot_from_intervaltier(interval_tier, destination, withFiv
     ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
                                         destination + "_recPlot.png")
 
-    add_numbers_to_recurrence_plot(data_points, destination + "_recPlot.png")
+
+    add_numbers_to_recurrence_plot(thinkanswer_list, destination + "_recPlot.png")
 
 
-def remove_doubles_from_list(data_points):
+def remove_doubles_from_list(data_points, func= lambda x: x):
 
     # this elaborate code is designed to remove all subsequently recurring numbers in the gaze directions.
     # needed because during the encoding process, two subsequent 5s were sometimes placed right next to each other
@@ -158,7 +188,7 @@ def remove_doubles_from_list(data_points):
         if key == 0:
             continue
         # if the two values next to each other are the same, ad done of them to the 2remove list
-        if dic[key] == dic[key - 1]:
+        if func(dic[key]) == func(dic[key - 1]):
             to_remove.append(key)
     # remove all previously identified values
     for n in to_remove:
@@ -196,39 +226,29 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
     for number in NUMBER2COLOR:
         number_color_dict[NUMBER2COLOR[number]] = []
 
-    numbers_clean = remove_doubles_from_list(numbers)
 
+    print("len: " + str(count_TAs(numbers)))
+    numbers_clean = remove_doubles_from_list(numbers, lambda x: x[0])
+    print("len: " + str(count_TAs(numbers)))
+
+    if withQuestions:
+        question_color_dict = dict()
+        for ta in TA2COLOR:
+            question_color_dict[TA2COLOR[ta]] = []
     # fill in the dictionary with points at which to draw a particular color
     for number in range(len(numbers_clean)):
-        number_color_dict[NUMBER2COLOR[int(numbers_clean[number])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
+        number_color_dict[NUMBER2COLOR[int(numbers_clean[number][0])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
+
+        if withQuestions:
+            question_color_dict[TA2COLOR[numbers_clean[number][1][0]]] += [(0, (newPlotIm.height-2) - number)]
 
     plotDraw = ImageDraw.Draw(newPlotIm)
 
-    if withQuestions:
-        for color in number_color_dict:
-             plotDraw.point(number_color_dict[color], color)
+    for color in number_color_dict:
+         plotDraw.point(number_color_dict[color], color)
 
-        question_color_dict = dict()
-        question_color_dict[GREY1] = [(0, newPlotIm.height-2)]
-        question_color_dict[GREY2] = []
-
-        grey = GREY1
-        fivesfound = 0
-        for n in range(len(numbers)):
-
-            if n == 0:
-                continue
-            if numbers[n] == '5' and  numbers[n-1] == '5':
-                fivesfound +=1
-                if grey == GREY1:
-                    grey = GREY2
-                else:
-                    grey = GREY1
-            else:
-                question_color_dict[grey] += (0, (newPlotIm.height -2) - (n-fivesfound))
-
-        for color in question_color_dict:
-            plotDraw.point(question_color_dict[color], color)
+    for color in question_color_dict:
+        plotDraw.point(question_color_dict[color], color)
 
 
     newPlotIm.save(recPlot[:-4] + "_numbered.png")
@@ -236,21 +256,32 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
 def do_Analysis(withFive=True):
     regex = r'(\d*_*vp\d*)_.*\.TextGrid'
 
-    VP_TextGrids = dict()
+    # this reads in the Blickrichtungen tiers from all participants
+    VP_brGrids = dict()
 
     for filename in os.listdir(VP_BLICKRICHTUNGEN_PATH):
         mo = re.search(regex, filename)
         if mo:
             vp_nr = mo.group(1)
-            VP_TextGrids[vp_nr] = TextGrid()
-            VP_TextGrids[vp_nr].read(os.path.join(VP_BLICKRICHTUNGEN_PATH, filename))
-            VP_TextGrids[vp_nr][0].delete_empty()
-            cleanup_IntervalTier(VP_TextGrids[vp_nr][0])
+            VP_brGrids[vp_nr] = TextGrid()
+            VP_brGrids[vp_nr].read(os.path.join(VP_BLICKRICHTUNGEN_PATH, filename))
+            VP_brGrids[vp_nr][0].delete_empty()
+            cleanup_IntervalTier(VP_brGrids[vp_nr][0])
+
+    # this reads in the ThinkAnswer tiers from all participants; needed for the recurrence plots
+    VP_taGrids = dict()
+    for filename in os.listdir(VP_THINKANSWER_PATH):
+        mo = re.search(regex, filename)
+        if mo:
+            vp_nr = mo.group(1)
+            VP_taGrids[vp_nr] = TextGrid()
+            VP_taGrids[vp_nr].read(os.path.join(VP_THINKANSWER_PATH, filename))
+            VP_taGrids[vp_nr][0].delete_empty()
 
     VP_PatternDicts = dict()
 
-    for vp_nr in VP_TextGrids:
-        VP_PatternDicts[vp_nr] = analyze_eye_movement_patterns(VP_TextGrids[vp_nr][0])
+    for vp_nr in VP_brGrids:
+        VP_PatternDicts[vp_nr] = analyze_eye_movement_patterns(VP_brGrids[vp_nr][0])
 
         compute_relative_frequencies(VP_PatternDicts[vp_nr], withFive)
 
@@ -261,10 +292,12 @@ def do_Analysis(withFive=True):
         machine = create_transition_graph_from_dict(VP_PatternDicts[vp_nr], withFive)
         machine.get_combined_graph().draw(os.path.join(ANALYSEN_PATH, GRAPH_PATH, vp_nr + "_graph.png"))
 
-    for vp_nr in VP_TextGrids:
-        create_recurrence_plot_from_intervaltier(VP_TextGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
+    for vp_nr in VP_brGrids:
+        create_recurrence_plot_from_intervaltier(VP_brGrids[vp_nr][0], VP_taGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
                                                                                       vp_nr), withFive)
 
+def count_TAs(lis):
+        return len(set(x[1] for x in lis))
 
 if __name__ == '__main__':
     do_Analysis(withFive=True)
