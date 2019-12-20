@@ -26,8 +26,8 @@ RECURRENCE_PATH = 'recPlots'
 # Colored_CodingGrid.png
 NUMBER2COLOR = {0: (102, 102, 102), 1: (0, 204, 255), 2: (0, 0, 255), 3: (0, 0, 128), 4: (102, 255, 51), 5: (0, 255, 0),
                 6: (0, 128, 0), 7: (255, 128, 128), 8: (255, 0, 0), 9: (128, 0, 0)}
-TA2COLOR = {"T": (191,191,191), "A": (64, 64, 64) }
-
+TA2COLOR = {0: (191,191,191), 1: (64, 64, 64)}
+CONDITION2COLOR = {"f": (255, 77, 255), "p" :(51, 204, 51), "s": (255, 153, 51)}
 
 def analyze_eye_movement_patterns(interval_tier):
     pattern_dict = {}
@@ -116,18 +116,26 @@ def create_recurrence_plot_from_intervaltier(blickrichtung_tier, thinkanswer_tie
         thinkanswer_list = []
 
         for blkrchtng in blickrichtung_tier:
-            for ta in thinkanswer_tier:
-                if blkrchtng.xmin() >= ta.xmin() and blkrchtng.xmin() <= ta.xmax():
-                    thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
-                    break
+            for n in range(len(thinkanswer_tier)):
+                mark = thinkanswer_tier[n].mark()
+                if mark[0] == "T":
+                    question_xmin = thinkanswer_tier[n].xmin()
+                    question_xmax = thinkanswer_tier[n+1].xmax()
+                    if question_xmin <= blkrchtng.xmin() <= question_xmax:
+                        thinkanswer_list.append((blkrchtng.mark(), n//2, mark))
+                        break
             else:
-                for ta in thinkanswer_tier:
-                    if math.floor(blkrchtng.xmin()) >= math.floor(ta.xmin()) and blkrchtng.xmin() <= ta.xmax():
-                        thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
-                        break
-                    elif round(blkrchtng.xmin()) >= round(ta.xmin()) and blkrchtng.xmin() <= ta.xmax():
-                        thinkanswer_list.append((blkrchtng.mark(), ta.mark()))
-                        break
+                for n in range(len(thinkanswer_tier)):
+                    mark = thinkanswer_tier[n].mark()
+                    if mark[0] == "T":
+                        question_xmin = thinkanswer_tier[n].xmin()
+                        question_xmax = thinkanswer_tier[n + 1].xmax()
+                        if   math.floor(question_xmin) <= math.floor(blkrchtng.xmin()) <= question_xmax:
+                            thinkanswer_list.append((blkrchtng.mark(), n // 2, mark))
+                            break
+                        elif  round(question_xmin) <= round(blkrchtng.xmin()) <= question_xmax:
+                            thinkanswer_list.append((blkrchtng.mark(), n // 2, mark))
+                            break
                 else:
                     print("No fit:" + str(blkrchtng))
 
@@ -212,7 +220,7 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
     if not withQuestions:
         horiOffset = 1
     else:
-        horiOffset = 2
+        horiOffset = 3
     # create new image, but 1px or 2px wider and 1px higher, depending on withQuestions, with backgroundcolor white
     newPlotIm = Image.new(plotIm.mode, (plotIm.width + horiOffset, plotIm.height + 1), color='white')
     # paste the opened recPlot into the new image at location (1,0) so that there remains a white strip to the left and
@@ -232,15 +240,20 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
     print("len: " + str(count_TAs(numbers)))
 
     if withQuestions:
+
         question_color_dict = dict()
+        conditions_color_dict = dict()
         for ta in TA2COLOR:
             question_color_dict[TA2COLOR[ta]] = []
+        for condition in CONDITION2COLOR:
+            conditions_color_dict[CONDITION2COLOR[condition]] = []
     # fill in the dictionary with points at which to draw a particular color
     for number in range(len(numbers_clean)):
         number_color_dict[NUMBER2COLOR[int(numbers_clean[number][0])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
 
         if withQuestions:
-            question_color_dict[TA2COLOR[numbers_clean[number][1][0]]] += [(0, (newPlotIm.height-2) - number)]
+            question_color_dict[TA2COLOR[numbers_clean[number][1]%2]] += [(horiOffset -2, (newPlotIm.height-2) - number)]
+            conditions_color_dict[CONDITION2COLOR[numbers_clean[number][2][1]]] += [(horiOffset - 3, (newPlotIm.height-2) - number)]
 
     plotDraw = ImageDraw.Draw(newPlotIm)
 
@@ -250,6 +263,8 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
     for color in question_color_dict:
         plotDraw.point(question_color_dict[color], color)
 
+    for color in conditions_color_dict:
+        plotDraw.point(conditions_color_dict[color], color)
 
     newPlotIm.save(recPlot[:-4] + "_numbered.png")
 
