@@ -24,7 +24,7 @@ GRAPH_PATH = 'graphs'
 RECURRENCE_PATH = 'recPlots'
 # change this dictionary if you want to change how the gaze directions are translated into colors; for current setup see
 # Colored_CodingGrid.png
-NUMBER2COLOR = {0: (102, 102, 102), 1: (0, 204, 255), 2: (0, 0, 255), 3: (0, 0, 128), 4: (102, 255, 51), 5: (0, 255, 0),
+NUMBER2COLOR = {0: (102, 102, 102), 1: (0, 204, 255), 2: (0, 0, 255), 3: (0, 0, 128), 4: (196, 252, 176), 5: (0, 255, 0),
                 6: (0, 128, 0), 7: (255, 128, 128), 8: (255, 0, 0), 9: (128, 0, 0)}
 TA2COLOR = {0: (191,191,191), 1: (64, 64, 64)}
 CONDITION2COLOR = {"f": (255, 77, 255), "p" :(51, 204, 51), "s": (255, 153, 51)}
@@ -144,20 +144,15 @@ def create_recurrence_plot_from_intervaltier(blickrichtung_tier, thinkanswer_tie
     thinkanswer_list = create_list_from_thinkanswer_tier(blickrichtung_tier, thinkanswer_tier)
     print("len :" + str(count_TAs(thinkanswer_list)))
     # turn interval tier into list of marks
-    data_points = [interval.mark() for interval in blickrichtung_tier]
 
-    print(len(data_points), " ", len (thinkanswer_list))
+    print("len: " + str(count_TAs(thinkanswer_list)))
+    thinkanswer_list_clean = remove_doubles_from_list(thinkanswer_list, lambda x: x[:2])
+    print("len: " + str(count_TAs(thinkanswer_list)))
 
-    # remove all fives if desired
-    if not withFive:
-        data_points = [mark for mark in data_points if mark != '5']
-
-    data_points_clean = remove_doubles_from_list(data_points)
+    data_points = [x[0] for x in thinkanswer_list_clean]
 
 
-
-
-    time_series = TimeSeries(data_points_clean, embedding_dimension=1, time_delay=0)
+    time_series = TimeSeries(data_points, embedding_dimension=1, time_delay=0)
     settings = Settings(time_series,
                         computing_type=ComputingType.Classic,
                         neighbourhood=FixedRadius(0.65),
@@ -179,7 +174,7 @@ def create_recurrence_plot_from_intervaltier(blickrichtung_tier, thinkanswer_tie
                                         destination + "_recPlot.png")
 
 
-    add_numbers_to_recurrence_plot(thinkanswer_list, destination + "_recPlot.png")
+    add_numbers_to_recurrence_plot(thinkanswer_list_clean, destination + "_recPlot.png")
 
 
 def remove_doubles_from_list(data_points, func= lambda x: x):
@@ -193,10 +188,21 @@ def remove_doubles_from_list(data_points, func= lambda x: x):
         dic[n] = data_points[n]
     for key in dic:
         # can't remove the first one, so skip
-        if key == 0:
+        if key == 0 or key-1 in to_remove:
             continue
-        # if the two values next to each other are the same, ad done of them to the 2remove list
-        if func(dic[key]) == func(dic[key - 1]):
+
+        # if the two values next to each other are the same, add one of them to the 2remove list
+        prev = func(dic[key-1])
+        this = func(dic[key])
+        try:
+            nex = func(dic[key+1])
+        except KeyError:
+            nex = "False"
+        if len(prev) > 1:
+            if prev[0] == this[0]:
+                if prev[1] == this[1] or this[1] == nex[1]:
+                    to_remove.append(key)
+        elif prev == this:
             to_remove.append(key)
     # remove all previously identified values
     for n in to_remove:
@@ -234,11 +240,6 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
     for number in NUMBER2COLOR:
         number_color_dict[NUMBER2COLOR[number]] = []
 
-
-    print("len: " + str(count_TAs(numbers)))
-    numbers_clean = remove_doubles_from_list(numbers, lambda x: x[0])
-    print("len: " + str(count_TAs(numbers)))
-
     if withQuestions:
 
         question_color_dict = dict()
@@ -248,12 +249,12 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
         for condition in CONDITION2COLOR:
             conditions_color_dict[CONDITION2COLOR[condition]] = []
     # fill in the dictionary with points at which to draw a particular color
-    for number in range(len(numbers_clean)):
-        number_color_dict[NUMBER2COLOR[int(numbers_clean[number][0])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
+    for number in range(len(numbers)):
+        number_color_dict[NUMBER2COLOR[int(numbers[number][0])]] += [(horiOffset-1, (newPlotIm.height-2) - (number)), (number+horiOffset, newPlotIm.height-1)]
 
         if withQuestions:
-            question_color_dict[TA2COLOR[numbers_clean[number][1]%2]] += [(horiOffset -2, (newPlotIm.height-2) - number)]
-            conditions_color_dict[CONDITION2COLOR[numbers_clean[number][2][1]]] += [(horiOffset - 3, (newPlotIm.height-2) - number)]
+            question_color_dict[TA2COLOR[numbers[number][1]%2]] += [(horiOffset -2, (newPlotIm.height-2) - number)]
+            conditions_color_dict[CONDITION2COLOR[numbers[number][2][1]]] += [(horiOffset - 3, (newPlotIm.height-2) - number)]
 
     plotDraw = ImageDraw.Draw(newPlotIm)
 

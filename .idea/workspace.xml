@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp12_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp21_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recAnal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recAnal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/2_vp31_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp11_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/3_vp12_recPlot_numbered.png" afterDir="false" />
@@ -15,6 +17,8 @@
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp12_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp21_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp22_recPlot_numbered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recAnal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recAnal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" beforeDir="false" afterPath="$PROJECT_DIR$/Analysen/recPlots/vp31_recPlot_numbered.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -30,14 +34,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&quot;2 4&quot;</find>
-      <find>m</find>
-      <find>&quot;4&quot;</find>
-      <find>&quot;&quot;</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -200,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576244607825</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add condition visualization to RecPlots">
+      <created>1576842023753</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576842023753</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +224,7 @@
     <MESSAGE value="Improve Recurrence Analysis" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Analysen/graphs/2_vp11_graph.png&#10;#&#9;Analysen/graphs/2_vp12_graph.png&#10;#&#9;Analysen/graphs/2_vp21_graph.png&#10;#&#9;Analysen/graphs/2_vp22_graph.png&#10;#&#9;Analysen/graphs/2_vp31_graph.png&#10;#&#9;Analysen/graphs/3_vp11_graph.png&#10;#&#9;Analysen/graphs/3_vp12_graph.png&#10;#&#9;Analysen/graphs/3_vp21_graph.png&#10;#&#9;Analysen/graphs/vp11_graph.png&#10;#&#9;Analysen/graphs/vp12_graph.png&#10;#&#9;Analysen/graphs/vp21_graph.png&#10;#&#9;Analysen/graphs/vp22_graph.png&#10;#&#9;Analysen/graphs/vp31_graph.png&#10;#&#9;main.py" />
     <MESSAGE value="Change how thinkingAnswer tier is visualized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change how thinkingAnswer tier is visualized" />
+    <MESSAGE value="Add condition visualization to RecPlots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add condition visualization to RecPlots" />
   </component>
 </project>
