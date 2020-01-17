@@ -1,6 +1,8 @@
 import csv
 import math
 import os
+import re
+import json
 from pyrqa.time_series import TimeSeries
 from pyrqa.settings import Settings
 from pyrqa.computing_type import ComputingType
@@ -10,7 +12,6 @@ from pyrqa.computation import RQAComputation
 from pyrqa.computation import RPComputation
 from pyrqa.image_generator import ImageGenerator
 from collections import defaultdict
-import re
 from praatclasses import TextGrid
 from transitions.extensions import GraphMachine as Machine
 from PIL import Image, ImageDraw
@@ -169,13 +170,14 @@ def create_recurrence_plot_from_intervaltier(blickrichtung_tier, thinkanswer_tie
         file.write(str(result))
 
     computation = RPComputation.create(settings)
-    result = computation.run()
-    ImageGenerator.save_recurrence_plot(result.recurrence_matrix_reverse,
+    rp_result = computation.run()
+    ImageGenerator.save_recurrence_plot(rp_result.recurrence_matrix_reverse,
                                         destination + "_recPlot.png")
 
 
     add_numbers_to_recurrence_plot(thinkanswer_list_clean, destination + "_recPlot.png")
 
+    return result
 
 def remove_doubles_from_list(data_points, func= lambda x: x):
 
@@ -272,7 +274,7 @@ def add_numbers_to_recurrence_plot(numbers, recPlot, withQuestions=True):
 def do_Analysis(withFive=True):
     regex = r'(\d*_*vp\d*)_.*\.TextGrid'
 
-    # this reads in the Blickrichtungen tiers from all participants
+    # this reads in the Blickrichtungen (gaze directions) tiers from all participants
     VP_brGrids = dict()
 
     for filename in os.listdir(VP_BLICKRICHTUNGEN_PATH):
@@ -301,19 +303,62 @@ def do_Analysis(withFive=True):
 
         compute_relative_frequencies(VP_PatternDicts[vp_nr], withFive)
 
+    # create the transition matrix for the gaze directions of each participant
     for vp_nr in VP_PatternDicts:
+        # also save the transition matrix as a csv file just because
         write_movementpattern_to_csv(os.path.join(ANALYSEN_PATH, CSV_PATH, vp_nr + "_tabelle.csv"),
                                      VP_PatternDicts[vp_nr])
 
         machine = create_transition_graph_from_dict(VP_PatternDicts[vp_nr], withFive)
         machine.get_combined_graph().draw(os.path.join(ANALYSEN_PATH, GRAPH_PATH, vp_nr + "_graph.png"))
 
+    # create the recurrence plots for each participant and save the rqa results in a list for later
+    rqa_results = []
     for vp_nr in VP_brGrids:
-        create_recurrence_plot_from_intervaltier(VP_brGrids[vp_nr][0], VP_taGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
+         result = create_recurrence_plot_from_intervaltier(VP_brGrids[vp_nr][0], VP_taGrids[vp_nr][0], os.path.join(ANALYSEN_PATH, RECURRENCE_PATH,
                                                                                       vp_nr), withFive)
+         rqa_results.append((vp_nr,result))
+
+    # write results into a nice csv-table
+    with open(os.path.join(ANALYSEN_PATH, "OverallRqaResults.csv"), 'w') as csvfile:
+        fieldnames = None
+        writer = None
+        for vp_nr, result in rqa_results:
+            print(to_json(result))
+            result_dict = json.loads(to_json(result))
+            if fieldnames == None:
+                fieldnames = ['VP'] + list(result_dict.keys())
+            if writer == None:
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer.writeheader()
+            result_dict['VP'] = vp_nr
+            writer.writerow(result_dict)
 
 def count_TAs(lis):
         return len(set(x[1] for x in lis))
 
+def to_json(rqa_result):
+    return json.dumps({"Minimum diagonal line length (L_min)": float(rqa_result.min_diagonal_line_length),
+                       "Minimum vertical line length (V_min)": float(rqa_result.min_vertical_line_length),
+                       "Minimum white vertical line length (W_min)": float(rqa_result.min_white_vertical_line_length),
+                       "Recurrence rate (RR)": float(rqa_result.recurrence_rate),
+                       "Determinism (DET)": float(rqa_result.determinism),
+                       "Average diagonal line length (L)": float(rqa_result.average_diagonal_line),
+                       "Longest diagonal line length (L_max)": float(rqa_result.longest_diagonal_line),
+                       "Divergence (DIV)": float(rqa_result.divergence),
+                       "Entropy diagonal lines (L_entr)": float(rqa_result.entropy_diagonal_lines),
+                       "Laminarity (LAM)": float(rqa_result.laminarity),
+                       "Longest vertical line length (V_max)": float(rqa_result.longest_vertical_line),
+                       "Entropy vertical lines (V_entr)": float(rqa_result.entropy_vertical_lines),
+                       "Average white vertical line length (W)": float(rqa_result.average_white_vertical_line),
+                       "Longest white vertical line length (W_max)": float(rqa_result.longest_white_vertical_line),
+                       "Longest white vertical line length inverse (W_div)": float(rqa_result.longest_white_vertical_line_inverse),
+                       "Entropy white vertical lines (W_entr)": float(rqa_result.entropy_white_vertical_lines),
+                       "Ratio determinism / recurrence rate (DET/RR)": float(rqa_result.ratio_determinism_recurrence_rate),
+                       "Ratio laminarity / determinism (LAM/DET)": float(rqa_result.ratio_laminarity_determinism)
+                       },
+                      sort_keys=False,
+                      indent=4,
+                      separators=(',', ': '))
 if __name__ == '__main__':
     do_Analysis(withFive=True)
